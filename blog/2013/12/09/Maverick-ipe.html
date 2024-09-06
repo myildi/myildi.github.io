@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"  
+    xml:lang="en" lang="en">
+  <head>
+    <title>OSX Maverick and installing ipe with Macports</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="en" />
+    <link rel="stylesheet" href="http://.//css/main.css" type="text/css"
+  </head>
+  <body  style="background-image: url(&quot;./images/index_bg.jpg&quot;);">
+  
+    <h1 align="center">OSX Maverick and installing ipe with Macports</h1>
+   
+    <p align="center"><a href="http://yildizoglu.info">Murat Yildizoglu</a></p>
+    <div id="container">
+            <div class="entry-content">
+        <span><p align="center">Published: 2013/12/09</span>
+                 <hr>
+        <p class="postbody"><p>If you are trying to install the Macports version of ipe, after having installed OSX Mavericks, there is a big chance that the build will fail. There is a solution already developed by MacPorts developers as a patch file downloadable from <a href="http://trac.macports.org/ticket/41049">this page</a>. You can directly download this file following <a href="http://trac.macports.org/attachment/ticket/41049/ipe-cstdlib.patch">this link</a>.</p>
+
+<p>With this file in your downloads (normally ~/Downloads) folder, open a terminal window and go to the ipe sources folder in your Macports tree (normally located under /opt/local) that remained after the failed install (type this instruction without line breaks):</p>
+
+<pre><code>cd /opt/local/var/macports/build/    
+_opt_local_var_macports_sources_rsync.macports.org_release_tarballs_ports_graphics_ipe/
+ipe/work/ ipe-7.1.4/src/
+</code></pre>
+
+<p>and execute there </p>
+
+<pre><code>patch -p0 &lt; ~/Downloads/ipe-cstdlib.patch
+</code></pre>
+
+<p>(check your Downloads folder that this patch file is there, before executing these instructions).</p>
+
+<p>If the patch has been successful (otherwise you get an error message normally), you can try to install again now the ipe port by executing in the Terminal:</p>
+
+<pre><code>sudo port install ipe
+</code></pre>
+
+<p>and the installation should start after you give the root password.</p>
+</p>
+      </div>
+      <hr>
+      <p align="right"><a href="http://./">Back to the table of contents</a></p>
+    </div>
+<hr>
+<p align='center' style="font-size:small"> (c) <a href="http://yildizoglu.info">Murat Yildizoglu</a>, 2014</p>
+  </body>
+</html>

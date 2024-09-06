@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"  
+    xml:lang="en" lang="en">
+  <head>
+    <title>ChkTex with LyX and Miktex 2.7 under Windows XP</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="en" />
+    <link rel="stylesheet" href="http://.//css/main.css" type="text/css"
+  </head>
+  <body  style="background-image: url(&quot;./images/index_bg.jpg&quot;);">
+  
+    <h1 align="center">ChkTex with LyX and Miktex 2.7 under Windows XP</h1>
+   
+    <p align="center"><a href="http://yildizoglu.info">Murat Yildizoglu</a></p>
+    <div id="container">
+            <div class="entry-content">
+        <span><p align="center">Published: 2009/02/25</span>
+                 <hr>
+        <p class="postbody"><p>ChkTeX is a LaTeX utility for… checking your Latex syntax. </p>
+
+<p>It is maintained by <a href="http://baruch.ev-en.org/proj/chktex/">Baruch Even</a>.<br />
+<a href="http://www.lyx.org/">LyX</a> can use <a href="http://baruch.ev-en.org/proj/chktex/">ChkTex</a> utility. But <a href="http://www.miktex.org/">Miktex</a> does not come with this utility.
+I propose here a way to activate this functionality using the chktex binary that is distributed in the <a href="http://www.tug.org/texlive/">TeXLive</a> LaTeX system. This is quite simple indeed.</p>
+
+<p>I assume that you have installed Miktex in the <code>"C:\MiKTeX x.x"</code> folder (replace <code>x.x</code> with the version of your Miktex).</p>
+
+<p>First download the <a href="http://yildizoglu.info/files/ChktexFiles.zip">chkTexFiles.zip</a> archive from my web server. It contains the necessary files for the installation of chktex under Miktex.<br />
+This archive contains the following files:  </p>
+
+<ul>
+  <li>.chktexrc</li>
+  <li>ChkTeX.exe</li>
+  <li>tl90geturl.dll</li>
+  <li>tl90gnu.dll</li>
+  <li>tl90kpse.dll </li>
+</ul>
+
+<p>The first file (.chktexrc) is the chktex configuration file. You must put it under in the following folder:</p>
+
+<p><code>"C:\MiKTeX x.x\tex\chktex"</code>  </p>
+
+<p>The other four files are the executable for chktex and the necessary libraries. You must put them in the folder <code>"C:\MiKTeX x.x\miktex\bin"</code>.
+You must now tell LyX how to find these files.</p>
+
+<p>You activate “Tools/Preferences” menu item in LyX, and in the Output/Latex item in the left menu, you must give the following command for ChkTex:  </p>
+
+<p><code>ChkTeX.exe -l "C:\MiKTeX x.x\tex\chktex\.chktexrc" -n1 -n3 -n6 -n9 -n22 -n25 -n30 -n38</code>   </p>
+
+<p>I must admit that I have not dug all the options for ChkTeX, you can probably finetune them using the <a href="http://baruch.ev-en.org/proj/chktex/">ChkTeX documentation</a> but these default options work on my installation. If you execute <code>chktex -h</code> in a Dos box, you will get an output that will indicate the role of different options.</p>
+
+<p>Once you save the configuration (do not forget to click on the Save button in the preferences box ;-) ), you can execute <code>"Tools/Check Tex"</code> menu item and it will indicate the potential problems with your LaTeX file. Don’t be afraid by the results! :-)</p>
+
+<p>ChkTeX source files are also available from <a href="http://www.ctan.org/tex-archive/support/chktex/">CTAN</a>.</p>
+
+</p>
+      </div>
+      <hr>
+      <p align="right"><a href="http://./">Back to the table of contents</a></p>
+    </div>
+<hr>
+<p align='center' style="font-size:small"> (c) <a href="http://yildizoglu.info">Murat Yildizoglu</a>, 2014</p>
+  </body>
+</html>

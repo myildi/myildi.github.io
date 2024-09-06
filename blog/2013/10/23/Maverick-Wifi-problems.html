@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"  
+    xml:lang="en" lang="en">
+  <head>
+    <title>OSX Maverick and Wifi disconnection problems</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="en" />
+    <link rel="stylesheet" href="http://.//css/main.css" type="text/css"
+  </head>
+  <body  style="background-image: url(&quot;./images/index_bg.jpg&quot;);">
+  
+    <h1 align="center">OSX Maverick and Wifi disconnection problems</h1>
+   
+    <p align="center"><a href="http://yildizoglu.info">Murat Yildizoglu</a></p>
+    <div id="container">
+            <div class="entry-content">
+        <span><p align="center">Published: 2013/10/23</span>
+                 <hr>
+        <p class="postbody"><p>If you are getting disconnected from your Wifi network after having upgraded to OSX Maverick, maybe you are having the same problem as me. 
+Indeed, after having upgraded my laptop to Maverick, it started to cycle between connection and disconnection to my Wifi router. 
+After having searched the internet, I have remembered that I have created a small script, some years ago, to automatically deactivating Wifi when I connect to the Ethernet cable the laptop, following this <a href="http://hints.macworld.com/article.php?story=20100927161027611">nice and useful trick</a>.</p>
+
+<p>Well, if this is also your case, you should check if your laptop has the script  **/Library/Scripts/toggleAirport.sh **, and delete it if it is the case. </p>
+
+<p><strong>That definitely solved my problem without doing anything else</strong>. </p>
+
+<p>You should also check that the configuration file /System/Library/LaunchAgents/com.mine.toggleairport.plist is also absent from your laptop, but it was the case for me.</p>
+
+</p>
+      </div>
+      <hr>
+      <p align="right"><a href="http://./">Back to the table of contents</a></p>
+    </div>
+<hr>
+<p align='center' style="font-size:small"> (c) <a href="http://yildizoglu.info">Murat Yildizoglu</a>, 2014</p>
+  </body>
+</html>

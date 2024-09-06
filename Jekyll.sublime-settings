@@ -1,0 +1,20 @@
+ 
+  {
+      "folders":
+      [
+          {
+              "follow_symlinks": true,
+              "path": "/Users/myildi/Documents/mesdocs/Htmls/myildi.github.io"
+          }
+      ],
+  
+      "settings":
+      {
+          "Jekyll":
+          {
+              "posts_path": "/Users/myildi/Documents/mesdocs/Htmls/myildi.github.io/_posts",
+              "drafts_path": "/Users/myildi/Documents/mesdocs/Htmls/myildi.github.io/_drafts",
+          }
+      }
+  }
+  

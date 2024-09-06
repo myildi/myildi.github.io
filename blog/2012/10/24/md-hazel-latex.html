@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"  
+    xml:lang="en" lang="en">
+  <head>
+    <title>Using Hazel for the automatization of the conversion, Markdown, XeLatex,  PDF</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="en" />
+    <link rel="stylesheet" href="http://.//css/main.css" type="text/css"
+  </head>
+  <body  style="background-image: url(&quot;./images/index_bg.jpg&quot;);">
+  
+    <h1 align="center">Using Hazel for the automatization of the conversion, Markdown, XeLatex,  PDF</h1>
+   
+    <p align="center"><a href="http://yildizoglu.info">Murat Yildizoglu</a></p>
+    <div id="container">
+            <div class="entry-content">
+        <span><p align="center">Published: 2012/10/24</span>
+                 <hr>
+        <p class="postbody"><p>As I have explained in my last posts, I am trying to craft a writing chain that would allow me to write in Markdown and easily convert this readable text to Latex and PDF. I can even download the final PDF file on my iPAD using a Dropbox folder.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>[Hazel](http://www.noodlesoft.com/hazel.php “Noodlesoft</td>
+      <td>Hazel”) is a very nice automatization system that I was planning to explore more in details, and it indeed solves a lot of problems in this case.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>My chain works as the following (this completes my previous message):</p>
+
+<ol>
+  <li>I write my text in IAWrite (under OSX or iOS) and they get saved in the iCloud (suppose that the file is called <em>mytext.md</em>).</li>
+  <li>On the desktop, these files appear in the mobile documents folder (<em>~/Library/Mobile Documents/74ZAFF46HB~jp~informationarchitects~Writer/Documents</em>). I use a first Hazel script (see <em>Figure 1</em>), attached to this folder, for copying this file to a Dropbox folder, as soon as a new version is saved.<br />
+<img src="https://dl.dropbox.com/s/vm7qe9q8nvwf901/blog-md-hazel-1.png?dl=1" alt="Figure 1" title="Figure 1" /><br />
+<strong>Figure 1:</strong> Copying the .md files to a Dropbox folder  </li>
+  <li>When the .md file is copied, other Hazel scripts, attached to the destination Dropbox folder, start to play. </li>
+  <li>
+    <p>One script converts the file to .html and .opml formats. This script calls <strong><a href="http://fletcherpenney.net/multimarkdown/" title="MultiMarkdown">multimarkdown</a></strong> for converting the copied markdown file to these formats (see <em>Figures 2-3</em>).<br />
+<img src="https://www.dropbox.com/s/y9udt63ogieq2xq/blog-md-html-1.png?dl=1" alt="Figure 2" title="Figure 2" /><br />
+<strong>Figure 2:</strong> Convert the md file to HTML and OPML<br />
+<img src="https://www.dropbox.com/s/37awzzfwufkzt32/blog-md-html-2.png?dl=1" alt="Figure 3" title="Figure 3" /><br />
+<strong>Figure 3:</strong> Convert the md file to HTML and OPML, the bash script  </p>
+  </li>
+  <li>Another script (see Figures <em>4-5</em>) converts the file to Latex format (only if the md file contains the meta tags that are necessary for obtaining a complete Latex file at the end of the conversion – otherwise Multimarkdown converts Latex snippets that cannot be compiled by Latex).<br />
+<img src="https://www.dropbox.com/s/j6szq9xyjg5p0i7/blog-md-latex-1.png?dl=1" alt="Figure 4" title="Figure 4" /><br />
+<strong>Figure 4:</strong> Detecting the changed md file to be converted to Latex<br />
+<img src="https://www.dropbox.com/s/m8bu3u0w62rv8ep/blog-md-latex-2.png?dl=1" alt="Figure 5" title="Figure 5" /><br />
+<strong>Figure 5:</strong> Converting the file to Latex</li>
+  <li>A last script (see <em>Figure 6</em>) converts the Latex file obtained in the previous step to PDF, using <strong><a href="http://xpt.sourceforge.net/tools/latexmake/" title="LatexMake - makefile for Latex compiling">latexmake</a></strong>. Latexmake is a Perl script that automatically runs the necessary operations for converting your tex file to PDF (the final format I have chosen here). Moreover, I have discovered that multimarkdown is not able to correctly convert accented characters in the meta tag fields. So, I have problems if the title, for example, is in French. For correctly converting these Unitype characters, one needs to compile the document using <strong>xelatex</strong>, and not <strong>pdflatex</strong>. The full Bash script I use is given below (including some commented instructions that were useful for debugging it, and that could be useful in some other contexts).<br />
+<img src="https://www.dropbox.com/s/05vnjbysvtugsz3/blog-md-xelatex.png?dl=1" alt="Figure 6" title="Figure 6" /><br />
+<strong>Figure 6:</strong> Converting the Latex file running latexmk and Xelatex</li>
+</ol>
+
+<p><strong>Bash script for compiling with <a href="http://en.wikipedia.org/wiki/XeTeX" title="XeTeX - Wikipedia, the free encyclopedia">Xetex</a>:</strong></p>
+
+<pre><code>#!/bin/bash
+#Compiling latex files using latexmake in a bash script with xelatex
+#useful for automating the compilation using Hazel
+#Hazel passes the full path of the file in the variable $1
+#Extracting the post filename and the folder name
+filename="$(postname $1)"
+foldername="$(dirname $1)"
+#deleting the extension from the post name
+filename="${filename%%.*}"
+#Completing the PATH with tex programs
+PATH=$PATH:/usr/texbin/
+export PATH
+#useful for checking if the PATH has been updated
+#echo $PATH &gt; env.txt
+cd "$foldername"
+#Useful for showing Growl notifications from a bash script
+#growlnotify must be installed using the installer in the growl.dmg (Logiciels telecharges)
+/usr/local/bin/growlnotify -s -a terminal -t "Running Latexmk" -m "on file: $filename.tex"
+/usr/local/bin/growlnotify -s -a terminal -t "Running Latexmk" -m "in folder: $foldername"
+
+#The main attraction: makes necessary compilations using xelatex (for Unitype characters)
+#Xelatex is necessary because multi markdown does not convert the text types in the meta tags
+# -f -g -silent assures a quick compilation even in presence of errors
+#For other options run "man latexmake" in Terminal
+/usr/texbin/latexmk -f -g -verbose -xelatex -silent $filename.tex
+/usr/local/bin/growlnotify -a terminal -t "Finished Latexmk"
+</code></pre>
+
+</p>
+      </div>
+      <hr>
+      <p align="right"><a href="http://./">Back to the table of contents</a></p>
+    </div>
+<hr>
+<p align='center' style="font-size:small"> (c) <a href="http://yildizoglu.info">Murat Yildizoglu</a>, 2014</p>
+  </body>
+</html>

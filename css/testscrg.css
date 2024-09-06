@@ -1,0 +1,190 @@
+/* Global reset */
+/* Based upon 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
+*, html, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0 }
+table { border-collapse:collapse; border-spacing:0 }
+fieldset, img { border:0 }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal }
+/*ol, ul, li { list-style:none }*/
+caption, th { text-align:left }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
+q:before, q:after { content:''}
+
+/* Global reset-RESET */
+/* The below restores some sensible defaults */
+strong { font-weight:bold }
+em { font-style:italic }
+a img { border:none } /* Gets rid of IE's blue borders */
+a { text-decoration: none; }
+
+@font-face {
+font-family: "Cent-mod";
+src: url(http://static.tumblr.com/lovrbkz/BN8lyfkvd/century_schoolbook.ttf) format("truetype");
+}
+
+/* BEGIN */
+
+body {
+max-width: 890px;
+margin: 0 auto;
+padding: 0 30px;
+
+font-family: "Century Schoolbook", "Century", "Cent-mod", "Georgia", serif;
+font-size: 100%;
+line-height: 1.7em;
+color: #555;
+-webkit-text-size-adjust: none;
+}
+
+.clear {
+clear: both;
+}
+
+
+#header {
+margin: 60px 0 0;
+padding: 0 0 30px;
+color: #888;
+border-bottom: 1px solid #E5E5E5;
+}
+
+	#header h1 a {
+	font-family: "Gill Sans", "Arial", "Helvetica", sans-serif;
+	font-weight: normal;
+	font-size: 2em;
+	margin: 0.3em 0;
+	color: #000;
+	border: none !important;
+	}
+
+.nav-pages {
+padding: 8px 0;
+border-bottom: 1px solid #E5E5E5;
+}
+
+.nav-pages ul {
+text-align: center;
+float: left;
+}
+
+	.nav-pages li {
+	display: inline-block;
+	margin-right: 20px;
+	}
+
+	.nav-pages li a {
+	color: #333;
+	}
+	
+	.nav-pages a:hover {
+	border-bottom: 1px solid #333;
+	}
+	
+	
+/* --- POSTS --- */
+	
+#posts {
+width: 60%;
+margin-top: 30px;
+margin-right: 5%;
+padding-right: 5%;
+border-right: 1px solid #E5E5E5;
+
+float: left;
+}
+
+.article h1:first-child {
+margin: 0 0 28px !important;
+font-size: 2em;
+font-family: "Gill Sans", "Arial", "Helvetica", sans-serif;
+}
+
+.article h1, .article h2, .article h3 {
+font-size: 1.7em;
+font-family: "Gill Sans", "Arial", "Helvetica", sans-serif;
+color: #999;
+margin: 1.7em 0 1em;
+line-height: 1em !important;
+}
+
+.date {
+display: block;
+margin: 20px 0;
+padding: 10px 0;
+border-top: 1px solid #E5E5E5;
+border-bottom: 1px solid #E5E5E5;
+font-family: "Gill Sans", "Arial", "Helvetica", sans-serif;
+}
+
+.post {
+margin-bottom: 60px;
+float: none;
+}
+
+.post a, #sidebar a, .copyright a, .archive a {
+color: #000;
+}
+
+a:hover {
+border-bottom: 1px solid #333;
+}
+
+hr {
+border: none;
+margin-bottom: 15px;
+}
+
+img {
+max-width: 100%;
+}
+
+.post p, .post blockquote {
+margin-bottom: 1.7em;
+}
+
+.post ul, .post ol {
+margin-left: 10px;
+padding-left: 10px;
+}
+
+.post ul li {
+list-style: square !important;
+}
+
+.post blockquote {
+margin-left: 10px;
+padding-left: 10px;
+border-left: 1px solid #E5E5E5;
+font-style: italic;
+}
+
+.archive h1 {
+font-size: 1em;
+}
+
+/* --- SIDEBAR --- */
+
+#sidebar {
+margin-top: 30px;
+float: left;
+width: 30%;
+}
+
+	.recent-posts h1 {
+	border-bottom: 1px solid #E5E5E5;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	}
+
+.footnotes {
+font-size: 0.8em;
+border-top: 1px solid #E5E5E5;
+}
+
+/* --- FOOTER --- */
+
+#footer {
+margin: 30px 0 60px;
+padding: 8px 0;
+border-top: 1px solid #E5E5E5;
+border-bottom: 1px solid #E5E5E5;
+}

@@ -1,0 +1,22 @@
+#name: "Murat Yildizoglu's Blog"
+#description: "Bits of tricks, tips and thoughts by me. See my web site at http://yildizoglu.info"
+
+
+
+#url: "http://localhost:4000"
+
+# Mon site
+
+ #url:  "http://blog.yildizoglu.info"
+ url: "./"
+ destination: "./blog"
+ image_path: "./images/"
+
+# GDrive
+
+#url: "http://blog.yildizoglu.info"
+#destination: "/Users/myildi/GoogleDrive/html/blog"
+#image_path: "http://blog.yildizoglu.info/images/"
+
+pygments: true
+

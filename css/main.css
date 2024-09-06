@@ -1,0 +1,78 @@
+@font-face {
+font-family: "Cent-mod";
+src: url(http://static.tumblr.com/lovrbkz/BN8lyfkvd/century_schoolbook.ttf) format("truetype");
+}
+
+
+body {color: #12185c;
+background-color: #ffffd7; 
+margin: 2%;
+padding: 1%;
+border-style: groove;
+border-width: medium;
+border-color: #8b000e;
+font-family: font-family: "Century Schoolbook", "Century", "Cent-mod", "Georgia", serif;
+font-size: medium;
+line-height: normal;
+text-align: justify;
+width: 70%;
+clear: both;
+position: relative;
+right: +15%;
+left: +15%; }
+
+a:link {color: #620006;
+text-decoration: none;
+ }
+
+a:hover { }
+
+
+.posttitle {font-family: Tahoma, Geneva, sans-serif;
+font-size: large;
+color: #9c8603;
+}
+
+.postbody {
+font-family: "Century Schoolbook", "Century", "Cent-mod", "Georgia", serif;
+font-size: medium;
+color: #990033;
+}
+
+.postexcerpt {
+font-family: Century Schoolbook, Century, Cent-mod, Georgia, serif;
+font-size: medium;
+color: #990033;
+}
+
+h1 {color: #09629b;
+font-family: "Tahoma", sans-serif;
+font-size: xx-large;
+font-weight: normal;
+ }
+
+h2 {color: #09629b;
+font-family: "Tahoma", sans-serif;
+font-size: x-large;
+font-weight: normal;
+ }
+
+h3 {color: #09629b;
+font-family: "Tahoma", sans-serif;
+font-size: large;
+font-weight: normal;
+ }
+
+h4 {color: #09629b;
+font-family: serif;
+font-size: medium;
+font-weight: bold;
+font-style: italic;
+ }
+
+h5 {color: #09629b;
+font-family: serif;
+font-size: medium;
+font-weight: normal;
+font-style: italic;
+ }

@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"  
+    xml:lang="en" lang="en">
+  <head>
+    <title>Combining Hazel and FTP to update locally changed files on a server</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-language" content="en" />
+    <link rel="stylesheet" href="http://.//css/main.css" type="text/css"
+  </head>
+  <body  style="background-image: url(&quot;./images/index_bg.jpg&quot;);">
+  
+    <h1 align="center">Combining Hazel and FTP to update locally changed files on a server</h1>
+   
+    <p align="center"><a href="http://yildizoglu.info">Murat Yildizoglu</a></p>
+    <div id="container">
+            <div class="entry-content">
+        <span><p align="center">Published: 2012/11/12</span>
+                 <hr>
+        <p class="postbody"><p>I am exploring the possibility of using Hazel to </p>
+
+<ul>
+  <li>upload locally changed files</li>
+  <li>automatically upload images to my server in order to include them on the blog with a link.</li>
+</ul>
+
+<p>I have easily found blog posts on the web indicating how to do this using Hazel and a Bash script that opens an FTP connection (my free host only accepts FTP, which not very secure, neither nice and I will have to change my hosting solution soon I think). Unfortunately, these scripts were not correctly working because of a small error, small but deadly error (at least given the rules used by Hazel and Bash currently under OSX ML). </p>
+
+<p>I am sharing below the commented script that I am using now for updating the folder tree of my web site.</p>
+
+<p><a href="http://www.noodlesoft.com/hazel.php" title="Noodlesoft | Hazel">Hazel</a>
+ has a rule set defined for the root folder of my web site. </p>
+
+<p>The first rule just tells Hazel to go into subfolders:</p>
+
+<ol>
+  <li>It’s condition part tells <em>“Kind”</em> <em>“is”</em> <em>“Folder”</em>;</li>
+  <li>and its action tells <em>“Run rules on folder contents”</em>.</li>
+</ol>
+
+<p><img src="http://yildizoglu.x10.mx/images-blog/blog-2012-11-12-6.png" alt="&quot;Going into subfolders&quot;" /></p>
+
+<p>The real job is done by the second rule that is called in all folders of the tree.
+It’s condition part tells:</p>
+
+<ul>
+  <li>“<em>Subfolder Depth</em>” “<em>is less than</em>” “<em>3</em>” (which is enough in my case, in lower levels I have files that never change);</li>
+  <li>“<em>Date Last Modified</em>” “<em>is less than</em>” “<em>Date Last Matched</em>”</li>
+</ul>
+
+<p>and it’s action part runs the shell script that is given below (check the comments in the script).</p>
+
+<p><img src="http://yildizoglu.x10.mx/images-blog/blog-2012-11-12-7.png" alt="&quot;Copying the files&quot;" /></p>
+
+<p>I will write another set of rules for a folder where I will locally put the image files that I use for this blog and Hazel will copy them to a dedicated public folder on my web server and copy the full URL of the image file to a log file (the last part of the script). It would be enough to paste the last line of this file in an image tag in Markdown. </p>
+
+<hr />
+
+<pre><code>    #!/bin/bash
+    
+    # A rule to check the changed files in the subfolders of
+    #    /Users/you/Documents/tests/
+    # and upload them in the corresponding subfolders of
+    #    /public_html/test
+    # on the server
+    
+    # get the full path and name of the file
+    ff=$1
+    
+    # get the file name only
+    filename1="$(postname $1)"
+    
+    # and folder path
+    foldername="$(dirname $1)"
+    
+    # filename without the extension
+    filename="${filename1%%.*}"
+    
+    # and the path as relative to the root of the folder supervised by Hazel
+    # this will be used during the FTP operations
+    relfoldername="${ff#/Users/you/Documents/tests/}"
+    relfoldername="${relfoldername%%/$filename1}"
+    
+    # Growl message to check the paths
+    /usr/local/bin/growlnotify -t "Document" -m "full name: $ff - foldername: $foldername - filename: $filename1 - relfoldername: $relfoldername"
+    
+    #Going to the folder to which the changed file belongs
+    cd "$foldername"
+    
+    # checking that we are where we should be
+    #/usr/local/bin/growlnotify -s -m "Current folder: $PWD"
+    
+    # The file can now be put on the server
+    
+    # FTP upload
+    # FTP login details
+    # Do not use quote marks in the variables that will be used by the FTP!!
+    
+    HOST=ftp.yourserver.com  
+    
+    USER=your-user-name
+    
+    PASS=your-password
+    
+    
+    #FTP login and upload
+    
+    /usr/bin/ftp -in $HOST &lt;&lt; EOF
+    
+    user $USER $PASS
+    
+    put $filename1 /public_html/test/$relfoldername/$filename1
+    
+    EOF
+    
+    /usr/local/bin/growlnotify -s -t "FTP" -m "File $filename transferred!"
+    
+    # Copy the address of the image to a log file
+    
+    echo “http://your-web-server/$relfoldername/$filename1” &gt;&gt; ~/Documents/Hazel-Uploads.txt
+    
+    exit 0
+</code></pre>
+
+<p><strong>Note:</strong> The problem with the scripts I have found on the web was due to the quotation marks used by these scripts for the FTP server, username and password. Once these marks deleted, the script started to work as it is supposed.</p>
+</p>
+      </div>
+      <hr>
+      <p align="right"><a href="http://./">Back to the table of contents</a></p>
+    </div>
+<hr>
+<p align='center' style="font-size:small"> (c) <a href="http://yildizoglu.info">Murat Yildizoglu</a>, 2014</p>
+  </body>
+</html>
