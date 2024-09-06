@@ -9,31 +9,68 @@
 			],
 			[
 				"cite",
-				"cite{keylist}	latex-document"
+				"cite{keylist}\tlatex-document"
 			],
 			[
 				"right",
-				"right)	latex-document"
+				"right)\tlatex-document"
 			],
 			[
 				"begeq",
-				"begin{equation}	latex-document"
+				"begin{equation}\tlatex-document"
 			],
 			[
 				"ref",
-				"ref{key}	latex-document"
+				"ref{key}\tlatex-document"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
+			"contents": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \n    \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n\n<html xmlns=\"http://www.w3.org/1999/xhtml\"  \n    xml:lang=\"en\" lang=\"en\">\n  <head>\n    <title>{{ page.title }}</title>\n    <meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\" />\n    <meta http-equiv=\"content-language\" content=\"en\" />\n    <link rel=\"stylesheet\" href=\"{{ site.url }}/css/main.css\" type=\"text/css\"\n  </head>\n  <body  style=\"background-image: url(&quot;{{ site.image_path }}index_bg.jpg&quot;);\">\n  {% if page.page_image contains \".jpg\" or page.page_image contains \".png\" %}\n    <p align=\"center\"><img src={{ site.image_path }}{{ page.page_image }}></p>\n  {% else %}\n    <h1 align=\"center\">{{ page.title }}</h1>\n  {% endif %} \n    <p align=\"center\"><a href=\"https://yildizoglu.fr\">Murat Yildizoglu</a></p>\n    <div id=\"container\">\n      {{ content }}\n    </div>\n<hr>\n<p align='center' style=\"font-size:small\"> (c) <a href=\"https://yildizoglu.fr\">Murat Yildizoglu</a>, 2009 - {{ site.time | date: '%Y' }}</p>\n  </body>\n</html>",
 			"file": "_layouts/base.html",
+			"file_size": 1069,
+			"file_write_time": 133700893238859827,
 			"settings":
 			{
-				"buffer_size": 1064,
+				"buffer_size": 1069,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nPackage Control\n---------------\n\n  Version 4.0.0 Release Notes\n  ===========================\n\n\n  Major Changes\n  -------------\n\n  - Requires at least ST3143 (1.0)\n\n  - drops support for python 2.x\n\n  - adds support for python 3.8\n\n  - Package and library version scheme changed from SemVer to PEP440\n    for better pre-release handling and compatibility with python packages.\n\n    Note: Package versions should still follow SemVer like `<major>.<minor>.<micro>`\n\n  - Dependencies are now called libraries.\n\n    They are installed to Data/Libs as ordinary python packages.\n\n    Existing managed dependencies are automatically converted.\n\n    Can install python wheels (*.whl)\n\n  - Channel/repository scheme v1.0 and v1.2 are no longer supported\n    as they contain only packages for no longer supported ST2.\n\n  - New channel/repository scheme v4.0.0 is introduced,\n    which allows to specify supported `python_versions`.\n\n    Parsing and installing \"requirements.txt\" is however not yet supported.\n\n    For working examples checkout example-channel.json and example-repository.json\n    from Package Control Github repository.\n\n\n  Note for Package Devs\n  ---------------------\n\n    packagecontrol.io does not yet support the new 4.0.0 scheme\n    and thus doesn't ship python 3.8 dependencies/libraries.\n\n    Therefore do not upgrade repositories to 4.0.0 scheme,\n    which are included in default channel.\n\n    You can however create your own 4.0.0 repository and\n    add it via 'Package Control: Add Repository'.\n\n    Metadata for python 3.8 compatible libraries are maintained at\n\n      https://github.com/packagecontrol/channel\n\n    and shipped via\n\n      https://packagecontrol.github.io/channel/channel_v4.json\n\n    so all packages can already migrate to python 3.8\n\n\n  New features include:\n  ---------------------\n\n    - support for python 3.8 dependencies (now called libraries)\n    - add openssl 3.0 support via asn1crypto 1.5.1 and oscrypto 1.3.0\n    - prune backups older than 14 days (#145)\n    - provide all relevant operations via ApplicationCommands (#1071)\n      + Advanced Disable Packages (disable_packages)\n      + Advanced Enable Packages (enable_packages)\n      + Advanced Install Packages (install_packages)\n      + Advanced Upgrade Packages (upgrade_packages)\n      + Advanced Remove Packages (remove_packages)\n    - allow relative paths in channel.json and repository.json (#1329)\n    - hide (auto-generated?) packages via `.hidden-sublime-package` file (#1429)\n    - support for cooperate_packages (#1406, #1633)\n    - IntelliSense support for for channel.json/repository.json via jsonschemas\n    - support for asset based Github/Gitlab releases (#1484)\n\n\n  Bug fixes include:\n  ------------------\n\n    - abort package operation if backup fails (#1000)\n    - fix long path support on Windows (#1020)\n    - fix missing packages not being installed if an overriding unpacked package exists (#1155)\n    - fix errors being displayed for git/hg tracked packages without remote (#1167)\n    - fix not all git/hg tracked packages being upgraded\n    - fix packages in auto_upgrade_ignore setting being renamed without upgrade (#1370)\n    - fix corruption of installed_packages or ignored_packages settings\n    - fix backup/restore of ST's \"auto\" color schemes and themes\n    - fix manual package upgrades converting unmanaged packages to managed ones (#1272)\n    - fix libraries not being upgraded by auto upgrader\n    - fix prompt for ST restart before all operations are completed\n    - fix SSL_CERT_FILE environment variable being ignored\n    - fix repositories of channels without cache not being downloaded (#1354, #1601)\n    - fix QuickPanelItem parse errors in URLs (#1580)\n    - fix unavailable libraries being reported as successfully installed (#1605)\n    - fix error message flooding\n    - keep ingored_packages clean by removing non-existing packages\n\n    ...\n\n    The full list of addressed bugs can be found at:\n\n      https://github.com/wbond/package_control/milestone/1\n\nDiffable\n--------\n\n  # 2.1.0\n  \n  ## Features\n  \n  - `auto_show_diff_hunks` setting added. Which is quite selfdescriptive and allows user to save one keystroak in inline text comparison mode. by @Oudstand\n\n  # Major update\n  \n  Hello everyone, due to years of inactivity, the **Diffy** package has been replaced.\n  \n  The new replacement is **Diffable**. It maintains all the features of its predecessor, while also modernizing those features behind the scenes and even introducing a few new ones.\n  \n  ## Feature list\n  \n  Let's examine the major changes a bit more closely:\n  \n  1. The command has changed. Previously, it was `diffy` and now it is `diffable`.\n  2. The arguments have also changed. The actions available now include: `inline`, `clear`, `kaleidoscope`. You can check their usage in the `Default.sublime-keymap` file (i.e. the plugin keymap settings).\n  3. The keymap itself hasn't changed, but it's disabled by default due to potential conflicts with default ST key-binding. Thus, you have to manually enable it through the plugin key-bindings menu.\n  4. The diff engine has been replaced with the default ST3-4 built-in engine. It's much more reliable and robust now.\n  5. Tabs can now be compared, just like groups. This was one of the two main reasons for initiating this project (the second reason was to leverage the ST diffable engine rather than relying on a custom python script).\n  6. External diffing tool support has been added. As of now, it only supports the Kaleidoscope app (macOS only). However, there's certainly room to expand the list of supported tools in the future.\n  \n  Please take a look at the plugin settings to gain a more comprehensive understanding of the complete list of features that this plugin provides.\n  \n  ## Future plans\n  \n  This package isn't meant to evolve beyond its original functionality. I see it as a tool that just works. Therefore, there are only two conceivable ways it could be enhanced:\n  \n  1. It could expand the list of supported third-party diff tools.\n  2. It could introduce new features to the built-in ST diffing tool.\n  \n  The former seems much more likely to occur in the foreseeable future than the latter.\n  \n  PS: Issues and PR's are welcome at this link [https://github.com/yaroslavyaroslav/Diffable](https://github.com/yaroslavyaroslav/Diffable).\n",
+			"settings":
+			{
+				"buffer_size": 6384,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"insert",
+					{
+						"characters": "Package Control Messages\n========================\n\nPackage Control\n---------------\n\n  Version 4.0.0 Release Notes\n  ===========================\n\n\n  Major Changes\n  -------------\n\n  - Requires at least ST3143 (1.0)\n\n  - drops support for python 2.x\n\n  - adds support for python 3.8\n\n  - Package and library version scheme changed from SemVer to PEP440\n    for better pre-release handling and compatibility with python packages.\n\n    Note: Package versions should still follow SemVer like `<major>.<minor>.<micro>`\n\n  - Dependencies are now called libraries.\n\n    They are installed to Data/Libs as ordinary python packages.\n\n    Existing managed dependencies are automatically converted.\n\n    Can install python wheels (*.whl)\n\n  - Channel/repository scheme v1.0 and v1.2 are no longer supported\n    as they contain only packages for no longer supported ST2.\n\n  - New channel/repository scheme v4.0.0 is introduced,\n    which allows to specify supported `python_versions`.\n\n    Parsing and installing \"requirements.txt\" is however not yet supported.\n\n    For working examples checkout example-channel.json and example-repository.json\n    from Package Control Github repository.\n\n\n  Note for Package Devs\n  ---------------------\n\n    packagecontrol.io does not yet support the new 4.0.0 scheme\n    and thus doesn't ship python 3.8 dependencies/libraries.\n\n    Therefore do not upgrade repositories to 4.0.0 scheme,\n    which are included in default channel.\n\n    You can however create your own 4.0.0 repository and\n    add it via 'Package Control: Add Repository'.\n\n    Metadata for python 3.8 compatible libraries are maintained at\n\n      https://github.com/packagecontrol/channel\n\n    and shipped via\n\n      https://packagecontrol.github.io/channel/channel_v4.json\n\n    so all packages can already migrate to python 3.8\n\n\n  New features include:\n  ---------------------\n\n    - support for python 3.8 dependencies (now called libraries)\n    - add openssl 3.0 support via asn1crypto 1.5.1 and oscrypto 1.3.0\n    - prune backups older than 14 days (#145)\n    - provide all relevant operations via ApplicationCommands (#1071)\n      + Advanced Disable Packages (disable_packages)\n      + Advanced Enable Packages (enable_packages)\n      + Advanced Install Packages (install_packages)\n      + Advanced Upgrade Packages (upgrade_packages)\n      + Advanced Remove Packages (remove_packages)\n    - allow relative paths in channel.json and repository.json (#1329)\n    - hide (auto-generated?) packages via `.hidden-sublime-package` file (#1429)\n    - support for cooperate_packages (#1406, #1633)\n    - IntelliSense support for for channel.json/repository.json via jsonschemas\n    - support for asset based Github/Gitlab releases (#1484)\n\n\n  Bug fixes include:\n  ------------------\n\n    - abort package operation if backup fails (#1000)\n    - fix long path support on Windows (#1020)\n    - fix missing packages not being installed if an overriding unpacked package exists (#1155)\n    - fix errors being displayed for git/hg tracked packages without remote (#1167)\n    - fix not all git/hg tracked packages being upgraded\n    - fix packages in auto_upgrade_ignore setting being renamed without upgrade (#1370)\n    - fix corruption of installed_packages or ignored_packages settings\n    - fix backup/restore of ST's \"auto\" color schemes and themes\n    - fix manual package upgrades converting unmanaged packages to managed ones (#1272)\n    - fix libraries not being upgraded by auto upgrader\n    - fix prompt for ST restart before all operations are completed\n    - fix SSL_CERT_FILE environment variable being ignored\n    - fix repositories of channels without cache not being downloaded (#1354, #1601)\n    - fix QuickPanelItem parse errors in URLs (#1580)\n    - fix unavailable libraries being reported as successfully installed (#1605)\n    - fix error message flooding\n    - keep ingored_packages clean by removing non-existing packages\n\n    ...\n\n    The full list of addressed bugs can be found at:\n\n      https://github.com/wbond/package_control/milestone/1"
+					},
+					"uwAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAGAAAAAAAAAAZAAAAAAAAAAAAAAAZAAAAAAAAADEAAAAAAAAAAAAAADEAAAAAAAAAMgAAAAAAAAAAAAAAMgAAAAAAAAAzAAAAAAAAAAAAAAAzAAAAAAAAAEIAAAAAAAAAAAAAAEIAAAAAAAAAQwAAAAAAAAAAAAAAQwAAAAAAAABSAAAAAAAAAAAAAABSAAAAAAAAAFMAAAAAAAAAAAAAAFMAAAAAAAAAVAAAAAAAAAAAAAAAVAAAAAAAAABxAAAAAAAAAAAAAABxAAAAAAAAAHIAAAAAAAAAAAAAAHIAAAAAAAAAjwAAAAAAAAAAAAAAjwAAAAAAAACQAAAAAAAAAAAAAACQAAAAAAAAAJEAAAAAAAAAAAAAAJEAAAAAAAAAkgAAAAAAAAAAAAAAkgAAAAAAAAChAAAAAAAAAAAAAAChAAAAAAAAAKIAAAAAAAAAAAAAAKIAAAAAAAAAsQAAAAAAAAAAAAAAsQAAAAAAAACyAAAAAAAAAAAAAACyAAAAAAAAALMAAAAAAAAAAAAAALMAAAAAAAAA1QAAAAAAAAAAAAAA1QAAAAAAAADWAAAAAAAAAAAAAADWAAAAAAAAANcAAAAAAAAAAAAAANcAAAAAAAAA9wAAAAAAAAAAAAAA9wAAAAAAAAD4AAAAAAAAAAAAAAD4AAAAAAAAAPkAAAAAAAAAAAAAAPkAAAAAAAAAGAEAAAAAAAAAAAAAGAEAAAAAAAAZAQAAAAAAAAAAAAAZAQAAAAAAABoBAAAAAAAAAAAAABoBAAAAAAAAXgEAAAAAAAAAAAAAXgEAAAAAAABfAQAAAAAAAAAAAABfAQAAAAAAAKoBAAAAAAAAAAAAAKoBAAAAAAAAqwEAAAAAAAAAAAAAqwEAAAAAAACsAQAAAAAAAAAAAACsAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAQIAAAAAAAAAAAAAAQIAAAAAAAACAgAAAAAAAAAAAAACAgAAAAAAACwCAAAAAAAAAAAAACwCAAAAAAAALQIAAAAAAAAAAAAALQIAAAAAAAAuAgAAAAAAAAAAAAAuAgAAAAAAAG4CAAAAAAAAAAAAAG4CAAAAAAAAbwIAAAAAAAAAAAAAbwIAAAAAAABwAgAAAAAAAAAAAABwAgAAAAAAAK4CAAAAAAAAAAAAAK4CAAAAAAAArwIAAAAAAAAAAAAArwIAAAAAAACwAgAAAAAAAAAAAACwAgAAAAAAANUCAAAAAAAAAAAAANUCAAAAAAAA1gIAAAAAAAAAAAAA1gIAAAAAAADXAgAAAAAAAAAAAADXAgAAAAAAABoDAAAAAAAAAAAAABoDAAAAAAAAGwMAAAAAAAAAAAAAGwMAAAAAAABZAwAAAAAAAAAAAABZAwAAAAAAAFoDAAAAAAAAAAAAAFoDAAAAAAAAWwMAAAAAAAAAAAAAWwMAAAAAAACSAwAAAAAAAAAAAACSAwAAAAAAAJMDAAAAAAAAAAAAAJMDAAAAAAAAywMAAAAAAAAAAAAAywMAAAAAAADMAwAAAAAAAAAAAADMAwAAAAAAAM0DAAAAAAAAAAAAAM0DAAAAAAAAGAQAAAAAAAAAAAAAGAQAAAAAAAAZBAAAAAAAAAAAAAAZBAAAAAAAABoEAAAAAAAAAAAAABoEAAAAAAAAbAQAAAAAAAAAAAAAbAQAAAAAAABtBAAAAAAAAAAAAABtBAAAAAAAAJgEAAAAAAAAAAAAAJgEAAAAAAAAmQQAAAAAAAAAAAAAmQQAAAAAAACaBAAAAAAAAAAAAACaBAAAAAAAAJsEAAAAAAAAAAAAAJsEAAAAAAAAsgQAAAAAAAAAAAAAsgQAAAAAAACzBAAAAAAAAAAAAACzBAAAAAAAAMoEAAAAAAAAAAAAAMoEAAAAAAAAywQAAAAAAAAAAAAAywQAAAAAAADMBAAAAAAAAAAAAADMBAAAAAAAAAsFAAAAAAAAAAAAAAsFAAAAAAAADAUAAAAAAAAAAAAADAUAAAAAAABIBQAAAAAAAAAAAABIBQAAAAAAAEkFAAAAAAAAAAAAAEkFAAAAAAAASgUAAAAAAAAAAAAASgUAAAAAAACEBQAAAAAAAAAAAACEBQAAAAAAAIUFAAAAAAAAAAAAAIUFAAAAAAAArwUAAAAAAAAAAAAArwUAAAAAAACwBQAAAAAAAAAAAACwBQAAAAAAALEFAAAAAAAAAAAAALEFAAAAAAAA6QUAAAAAAAAAAAAA6QUAAAAAAADqBQAAAAAAAAAAAADqBQAAAAAAABsGAAAAAAAAAAAAABsGAAAAAAAAHAYAAAAAAAAAAAAAHAYAAAAAAAAdBgAAAAAAAAAAAAAdBgAAAAAAAF8GAAAAAAAAAAAAAF8GAAAAAAAAYAYAAAAAAAAAAAAAYAYAAAAAAABhBgAAAAAAAAAAAABhBgAAAAAAAJAGAAAAAAAAAAAAAJAGAAAAAAAAkQYAAAAAAAAAAAAAkQYAAAAAAACSBgAAAAAAAAAAAACSBgAAAAAAAKUGAAAAAAAAAAAAAKUGAAAAAAAApgYAAAAAAAAAAAAApgYAAAAAAACnBgAAAAAAAAAAAACnBgAAAAAAAOUGAAAAAAAAAAAAAOUGAAAAAAAA5gYAAAAAAAAAAAAA5gYAAAAAAADnBgAAAAAAAAAAAADnBgAAAAAAABwHAAAAAAAAAAAAABwHAAAAAAAAHQcAAAAAAAAAAAAAHQcAAAAAAAAeBwAAAAAAAAAAAAAeBwAAAAAAAB8HAAAAAAAAAAAAAB8HAAAAAAAANgcAAAAAAAAAAAAANgcAAAAAAAA3BwAAAAAAAAAAAAA3BwAAAAAAAE4HAAAAAAAAAAAAAE4HAAAAAAAATwcAAAAAAAAAAAAATwcAAAAAAABQBwAAAAAAAAAAAABQBwAAAAAAAJAHAAAAAAAAAAAAAJAHAAAAAAAAkQcAAAAAAAAAAAAAkQcAAAAAAADWBwAAAAAAAAAAAADWBwAAAAAAANcHAAAAAAAAAAAAANcHAAAAAAAABAgAAAAAAAAAAAAABAgAAAAAAAAFCAAAAAAAAAAAAAAFCAAAAAAAAEoIAAAAAAAAAAAAAEoIAAAAAAAASwgAAAAAAAAAAAAASwgAAAAAAAB/CAAAAAAAAAAAAAB/CAAAAAAAAIAIAAAAAAAAAAAAAIAIAAAAAAAAsggAAAAAAAAAAAAAsggAAAAAAACzCAAAAAAAAAAAAACzCAAAAAAAAOcIAAAAAAAAAAAAAOcIAAAAAAAA6AgAAAAAAAAAAAAA6AgAAAAAAAAcCQAAAAAAAAAAAAAcCQAAAAAAAB0JAAAAAAAAAAAAAB0JAAAAAAAATwkAAAAAAAAAAAAATwkAAAAAAABQCQAAAAAAAAAAAABQCQAAAAAAAJYJAAAAAAAAAAAAAJYJAAAAAAAAlwkAAAAAAAAAAAAAlwkAAAAAAADnCQAAAAAAAAAAAADnCQAAAAAAAOgJAAAAAAAAAAAAAOgJAAAAAAAAGwoAAAAAAAAAAAAAGwoAAAAAAAAcCgAAAAAAAAAAAAAcCgAAAAAAAGsKAAAAAAAAAAAAAGsKAAAAAAAAbAoAAAAAAAAAAAAAbAoAAAAAAACoCgAAAAAAAAAAAACoCgAAAAAAAKkKAAAAAAAAAAAAAKkKAAAAAAAAqgoAAAAAAAAAAAAAqgoAAAAAAACrCgAAAAAAAAAAAACrCgAAAAAAAL8KAAAAAAAAAAAAAL8KAAAAAAAAwAoAAAAAAAAAAAAAwAoAAAAAAADUCgAAAAAAAAAAAADUCgAAAAAAANUKAAAAAAAAAAAAANUKAAAAAAAA1goAAAAAAAAAAAAA1goAAAAAAAALCwAAAAAAAAAAAAALCwAAAAAAAAwLAAAAAAAAAAAAAAwLAAAAAAAAOgsAAAAAAAAAAAAAOgsAAAAAAAA7CwAAAAAAAAAAAAA7CwAAAAAAAJoLAAAAAAAAAAAAAJoLAAAAAAAAmwsAAAAAAAAAAAAAmwsAAAAAAADuCwAAAAAAAAAAAADuCwAAAAAAAO8LAAAAAAAAAAAAAO8LAAAAAAAAJwwAAAAAAAAAAAAAJwwAAAAAAAAoDAAAAAAAAAAAAAAoDAAAAAAAAH8MAAAAAAAAAAAAAH8MAAAAAAAAgAwAAAAAAAAAAAAAgAwAAAAAAADHDAAAAAAAAAAAAADHDAAAAAAAAMgMAAAAAAAAAAAAAMgMAAAAAAAACA0AAAAAAAAAAAAACA0AAAAAAAAJDQAAAAAAAAAAAAAJDQAAAAAAAGANAAAAAAAAAAAAAGANAAAAAAAAYQ0AAAAAAAAAAAAAYQ0AAAAAAACYDQAAAAAAAAAAAACYDQAAAAAAAJkNAAAAAAAAAAAAAJkNAAAAAAAA3A0AAAAAAAAAAAAA3A0AAAAAAADdDQAAAAAAAAAAAADdDQAAAAAAABcOAAAAAAAAAAAAABcOAAAAAAAAGA4AAAAAAAAAAAAAGA4AAAAAAABsDgAAAAAAAAAAAABsDgAAAAAAAG0OAAAAAAAAAAAAAG0OAAAAAAAAog4AAAAAAAAAAAAAog4AAAAAAACjDgAAAAAAAAAAAACjDgAAAAAAAPMOAAAAAAAAAAAAAPMOAAAAAAAA9A4AAAAAAAAAAAAA9A4AAAAAAAAUDwAAAAAAAAAAAAAUDwAAAAAAABUPAAAAAAAAAAAAABUPAAAAAAAAWA8AAAAAAAAAAAAAWA8AAAAAAABZDwAAAAAAAAAAAABZDwAAAAAAAFoPAAAAAAAAAAAAAFoPAAAAAAAAYQ8AAAAAAAAAAAAAYQ8AAAAAAABiDwAAAAAAAAAAAABiDwAAAAAAAGMPAAAAAAAAAAAAAGMPAAAAAAAAlw8AAAAAAAAAAAAAlw8AAAAAAACYDwAAAAAAAAAAAACYDwAAAAAAAJkPAAAAAAAAAAAAAJkPAAAAAAAA0w8AAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					1,
+					1,
+					"package_control_message",
+					{
+						"message": "\n\nDiffable\n--------\n\n  # 2.1.0\n  \n  ## Features\n  \n  - `auto_show_diff_hunks` setting added. Which is quite selfdescriptive and allows user to save one keystroak in inline text comparison mode. by @Oudstand\n\n  # Major update\n  \n  Hello everyone, due to years of inactivity, the **Diffy** package has been replaced.\n  \n  The new replacement is **Diffable**. It maintains all the features of its predecessor, while also modernizing those features behind the scenes and even introducing a few new ones.\n  \n  ## Feature list\n  \n  Let's examine the major changes a bit more closely:\n  \n  1. The command has changed. Previously, it was `diffy` and now it is `diffable`.\n  2. The arguments have also changed. The actions available now include: `inline`, `clear`, `kaleidoscope`. You can check their usage in the `Default.sublime-keymap` file (i.e. the plugin keymap settings).\n  3. The keymap itself hasn't changed, but it's disabled by default due to potential conflicts with default ST key-binding. Thus, you have to manually enable it through the plugin key-bindings menu.\n  4. The diff engine has been replaced with the default ST3-4 built-in engine. It's much more reliable and robust now.\n  5. Tabs can now be compared, just like groups. This was one of the two main reasons for initiating this project (the second reason was to leverage the ST diffable engine rather than relying on a custom python script).\n  6. External diffing tool support has been added. As of now, it only supports the Kaleidoscope app (macOS only). However, there's certainly room to expand the list of supported tools in the future.\n  \n  Please take a look at the plugin settings to gain a more comprehensive understanding of the complete list of features that this plugin provides.\n  \n  ## Future plans\n  \n  This package isn't meant to evolve beyond its original functionality. I see it as a tool that just works. Therefore, there are only two conceivable ways it could be enhanced:\n  \n  1. It could expand the list of supported third-party diff tools.\n  2. It could introduce new features to the built-in ST diffing tool.\n  \n  The former seems much more likely to occur in the foreseeable future than the latter.\n  \n  PS: Issues and PR's are welcome at this link [https://github.com/yaroslavyaroslav/Diffable](https://github.com/yaroslavyaroslav/Diffable).\n"
+					},
+					"AQAAANMPAAAAAAAA8BgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAzAMAAAAAAADMAwAAAAAAAAAAAAAAAPC/"
+				]
+			]
 		},
 		{
 			"file": "index.html",
@@ -47,7 +84,7 @@
 			"file": "_layouts/post.html",
 			"settings":
 			{
-				"buffer_size": 361,
+				"buffer_size": 385,
 				"line_ending": "Unix"
 			}
 		},
@@ -63,7 +100,7 @@
 			"file": "_config.yml",
 			"settings":
 			{
-				"buffer_size": 241,
+				"buffer_size": 442,
 				"line_ending": "Unix"
 			}
 		},
@@ -77,9 +114,14 @@
 		}
 	],
 	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 392.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -186,6 +228,10 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/myildi/Documents/mesdocs/Htmls/myildi.github.io"
+	],
 	"file_history":
 	[
 		"/Users/myildi/Dropbox/Projet-Macrolearn/HowTransparent/Soumission-EJ_IJCB/adaptive-learning-11.tex",
@@ -220,7 +266,7 @@
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -235,6 +281,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"base.html",
 			"it",
 			"he",
 			"she",
@@ -257,15 +304,16 @@
 			"Arifovic1994a"
 		],
 		"reverse": false,
+		"scrollbar_highlights": true,
 		"show_context": true,
 		"use_buffer2": true,
+		"use_gitignore": true,
 		"whole_word": true,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
 				{
@@ -274,15 +322,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1064,
+						"buffer_size": 1069,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								398,
-								398
+								0,
+								0
 							]
 						],
 						"settings":
@@ -296,11 +344,46 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6384,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								972,
+								972
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"tab_width": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
@@ -318,45 +401,51 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "_layouts/post.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 361,
+						"buffer_size": 385,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								361,
-								361
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "css/main.css",
 					"semi_transient": false,
 					"settings":
@@ -375,45 +464,51 @@
 						"settings":
 						{
 							"auto_indent": true,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 90.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "_config.yml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 241,
+						"buffer_size": 442,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								196,
-								196
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/YAML/YAML.tmLanguage"
+							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
+					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "css/testscrg.css",
 					"semi_transient": false,
 					"settings":
@@ -434,11 +529,12 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 159.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
+					"stack_multiselect": false,
 					"type": "text"
 				}
 			]
@@ -446,7 +542,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -487,15 +583,17 @@
 	{
 		"height": 112.0
 	},
+	"pinned_build_system": "",
 	"project": "jekyll.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -508,6 +606,7 @@
 	"select_project":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
@@ -516,11 +615,13 @@
 	"select_symbol":
 	{
 		"height": 0.0,
+		"last_filter": "",
 		"selected_items":
 		[
 		],
 		"width": 0.0
 	},
+	"selected_group": 0,
 	"settings":
 	{
 	},
