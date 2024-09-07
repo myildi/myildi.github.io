@@ -1,19 +1,22 @@
-body {color: #12185c;
-background-color: #ffffd7; 
-margin: 2%;
-padding: 1%;
-border-style: groove;
-border-width: medium;
-border-color: #8b000e;
-font-family: font-family: Tahoma, Geneva, sans-serif;
-font-size: medium;
-line-height: normal;
-text-align: justify;
-width: 70%;
-clear: both;
-position: relative;
-right: +15%;
-left: +15%; }
+body
+{
+	color: #12185c;
+	background-color: #ffffd7;
+	margin: 1%;
+	padding: 1%;
+	border-style: groove;
+	border-width: medium;
+	border-color: #8b000e;
+	font-family: font-family: Tahoma, Geneva, sans-serif;
+	font-size: medium;
+	line-height: normal;
+	text-align: justify;
+	width: 95%;
+	clear: both;
+	position: relative;
+	right: auto;
+	left: auto;
+}
 
 a:link {color: #620006;
 text-decoration: none;
