@@ -1,15 +1,7 @@
 #name: "Murat Yildizoglu's Blog"
 description: "Bits of tricks, tips and thoughts by me. See my web site at https://yildizoglu.fr"
 
- #url:  "https://myildi.github.io"
- #url: "./"
-# destination: "./blog"
- #image_path: "./images/"
-
-
 url: "https://myildi.github.io"
-#destination: "/Users/myildi/GoogleDrive/html/blog"
 image_path: "https://myildi.github.io/images/"
-
 pygments: true
 
