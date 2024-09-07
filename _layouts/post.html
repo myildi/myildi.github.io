@@ -16,7 +16,7 @@ layout: default
       <H3>Last five articles</H3>
       {% for post in site.posts limit:5 %}
     <li>
-      <div style="size: medium"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}}</a></div>
+      <div style="font-size: medium"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}}</a></div>
     </li>
   {% endfor %}
 </ul>
