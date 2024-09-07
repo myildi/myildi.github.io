@@ -1,22 +1,15 @@
 #name: "Murat Yildizoglu's Blog"
-#description: "Bits of tricks, tips and thoughts by me. See my web site at http://yildizoglu.info"
+description: "Bits of tricks, tips and thoughts by me. See my web site at https://yildizoglu.fr"
+
+ #url:  "https://myildi.github.io"
+ #url: "./"
+# destination: "./blog"
+ #image_path: "./images/"
 
 
-
-#url: "http://localhost:4000"
-
-# Mon site
-
- #url:  "http://blog.yildizoglu.info"
- url: "./"
- destination: "./blog"
- image_path: "./images/"
-
-# GDrive
-
-#url: "http://blog.yildizoglu.info"
+url: "https://myildi.github.io"
 #destination: "/Users/myildi/GoogleDrive/html/blog"
-#image_path: "http://blog.yildizoglu.info/images/"
+image_path: "https://myildi.github.io/images/"
 
 pygments: true
 
