@@ -4,7 +4,9 @@ layout: default
       <div class="entry-content">
         <span><p align="center">Published: {{ page.date | date: '%Y' }}/{{ page.date | date: '%m' }}/{{ page.date | date: '%d' }}</span>
                  <hr>
-        <p class="post">{{ content }}</p>
+        <article class="post">
+ 		 {{ content }}
+		</article>
       </div>
       <hr>
       <p align="right"><a href="https://myildi.github.io/">Back to the table of contents</a></p>
