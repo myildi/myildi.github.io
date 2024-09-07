@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Restart again: My new blog on GitHub Pages
+title: Reviving my old blog using GitHub Pages
 ---
 I moved [my old blog](https://yildizoglu.blogspot.fr) from _Blogger_ to **[Scriptogr.am](http://scriptogr.am/)** some years ago. But now I would like to become completely autonomous, using  **[Jekyll](https://jekyllrb.com/)**.
 
