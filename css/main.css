@@ -33,13 +33,13 @@ color: #9c8603;
 .postbody {
     font-family: Tahoma, Geneva, sans-serif;
     color: #30168C;
-    font-size: 1.em;
+/*     font-size: 1.em; */
 }
 
 .postexcerpt {
 font-family: Tahoma, Geneva, sans-serif;
 font-size: medium;
-color: #990033;
+color: #30168C;
 }
 
 h1 {color: #09629b;
