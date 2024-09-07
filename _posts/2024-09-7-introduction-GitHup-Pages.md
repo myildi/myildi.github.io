@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Introduction to my new blog on GitHub Pages
+title: Restart again: My new blog on GitHub Pages
 ---
 I moved [my old blog](https://yildizoglu.blogspot.fr) from _Blogger_ to **[Scriptogr.am](http://scriptogr.am/)** some years ago. But now I would like to become completely autonomous, using  **[Jekyll](https://jekyllrb.com/)**.
 
@@ -15,3 +15,5 @@ So, the new process is simple:
 4. You commit your changes to your Git repository, and you push the corresponding branch to GitHub.
 5. GitHub actions run Jekyll and convert your blog, and you can read it at https://xxx.github.**io** where xxx is your GitHub handle.
 6. Voilà!
+
+I reproduced here the posts from my old blog. Some of these tricks became obsolete but can nevertheless give ideas to explore when facing some strange glitches. Others continue to be relevant and may be used even today, at worst with marginal adaptation if the corresponding software developed some backward incompatibilities.

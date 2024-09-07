@@ -9,4 +9,12 @@ layout: default
 		</article>
       </div>
       <hr>
-      <p align="right"><a href="https://myildi.github.io/">Back to the table of contents</a></p>
+      {% for post in site.posts limit:5 %}
+    <li>
+      <div class="posttitle"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}}</a></div>
+    </li>
+  {% endfor %}
+</ul>
+
+      <hr>
+      <p align="right"><a href="https://myildi.github.io/">Back to the complete table of contents</a></p>
