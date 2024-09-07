@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Reviving my old blog using GitHub Pages
+pin: true
 ---
 I moved [my old blog](https://yildizoglu.blogspot.fr) from _Blogger_ to **[Scriptogr.am](http://scriptogr.am/)** some years ago. Now it’s revival time, but with Jekyll (hopefully, without Mr Hyde).
 

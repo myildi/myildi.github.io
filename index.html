@@ -5,6 +5,20 @@ page_image: blog-title.png
 ---
 
 <ul>
+<!-- Display pinned posts -->
+{% assign pinned_posts = site.posts | where: "pin", true %}
+{% if pinned_posts.size > 0 %}
+  <section id="pinned-posts">
+      {% for post in pinned_posts %}
+        <li>
+ 			<div class="posttitle"><a href="{{ site.url }}{{ post.url }}">{{ post.title }} - {{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.date | date: '%d' }}</a></div>
+     		 <div class="postexcerpt">{{ post.excerpt }}</div>
+      		<p align="right"><a href="{{ site.url }}{{ post.url }}"> Continue to read...</a></p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
   {% for post in site.posts %}
     <li>
       <div class="posttitle"><a href="{{ site.url }}{{ post.url }}">{{ post.title }} - {{ post.date | date: '%Y' }}/{{ post.date | date: '%m' }}/{{ post.date | date: '%d' }}</a></div>
