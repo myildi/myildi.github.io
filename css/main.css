@@ -30,10 +30,12 @@ font-size: large;
 color: #9c8603;
 }
 
-.postbody {
-    font-family: Tahoma, Geneva, sans-serif;
-    color: #00008B;
-/*     font-size: 1.em; */
+.postbody
+{
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #00008B;
+	/*     font-size: 1.em; */
+	line-height: 150%;
 }
 
 .postexcerpt {
