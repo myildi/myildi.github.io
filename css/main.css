@@ -7,7 +7,7 @@ body
 	border-style: groove;
 	border-width: medium;
 	border-color: #8b000e;
-	font-family: font-family: "Lucida bright", Tahoma, Geneva, sans-serif;
+	font-family: font-family: "Lucida Bright", Tahoma, Geneva, sans-serif;
 /* 	font-size: medium; */
 	line-height: normal;
 	text-align: justify;
@@ -32,14 +32,14 @@ color: #9c8603;
 
 .postbody
 {
-	font-family: Tahoma, Geneva, sans-serif;
+	font-family: "Lucida Bright", Tahoma, Geneva, sans-serif;
 	color: #00008B;
 	font-size: 1.1em;
 	line-height: 1.5em;
 }
 
 .postexcerpt {
-font-family: Tahoma, Geneva, sans-serif;
+font-family: Tahoma, sans-serif;
 font-size: medium;
 color: #00008B;
 }
