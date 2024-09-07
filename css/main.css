@@ -7,7 +7,7 @@ body
 	border-style: groove;
 	border-width: medium;
 	border-color: #8b000e;
-	font-family: font-family: Tahoma, Geneva, sans-serif;
+	font-family: font-family: "Lucida bright", Tahoma, Geneva, sans-serif;
 /* 	font-size: medium; */
 	line-height: normal;
 	text-align: justify;
@@ -34,7 +34,7 @@ color: #9c8603;
 {
 	font-family: Tahoma, Geneva, sans-serif;
 	color: #00008B;
-	font-size: 1.2em;
+	font-size: 1.1em;
 	line-height: 1.5em;
 }
 
