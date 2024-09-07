@@ -1,6 +1,6 @@
 body
 {
-	color: #30168C;
+	color: #00008B;
 	background-color: #ffffd7;
 	margin: 1%;
 	padding: 1%;
@@ -32,14 +32,14 @@ color: #9c8603;
 
 .postbody {
     font-family: Tahoma, Geneva, sans-serif;
-    color: #30168C;
+    color: #00008B;
 /*     font-size: 1.em; */
 }
 
 .postexcerpt {
 font-family: Tahoma, Geneva, sans-serif;
 font-size: medium;
-color: #30168C;
+color: #00008B;
 }
 
 h1 {color: #09629b;
