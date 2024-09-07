@@ -33,14 +33,15 @@ font-size: large;
 color: #9c8603;
 }
 
-.postbody {
-font-family: "Century Schoolbook", "Century", "Cent-mod", "Georgia", serif;
-font-size: medium;
-color: #990033;
+.postbody
+{
+	font-family: "Georgia","Century Schoolbook", "Century", "Cent-mod", serif;
+	font-size: larger;
+	color: #30168C;
 }
 
 .postexcerpt {
-font-family: Century Schoolbook, Century, Cent-mod, Georgia, serif;
+font-family: "Century Schoolbook", "Century", "Cent-mod", "Georgia", serif;
 font-size: medium;
 color: #990033;
 }
