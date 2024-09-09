@@ -1,29 +1,35 @@
 ---
 layout: default
 ---
-      <div class="entry-content">
-        <span><p align="center">Published: {{ page.date | date: '%Y' }}/{{ page.date | date: '%m' }}/{{ page.date | date: '%d' }}</span>
-                 <hr>
-        <article class="postbody">
- 		 {{ content }}
-		</article>
-      </div>
-      <hr>
-    <table id="lastposts-table"  style="align: center;">
-    <tr width: 80%;">
-      <td>
-      <ul>
-      <H3>Last five articles</H3>
-      {% for post in site.posts limit:5 %}
-    <li>
-      <div style="font-size: 1.2em; font-family: Lucida Bright, Tahoma, Geneva, sans-serif;"><a href="{{ site.url }}{{ post.url }}">{{ post.title }}}</a></div>
-    </li>
-  {% endfor %}
-</ul>
-      </td>
-      </tr>
-      </table>
+<head>
+  <!-- Other head elements -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="container">
+    <article class="post">
+      <h1 class="posttitle">{{ page.title }}</h1>
       
+      <p class="post-meta">
+        <span>Published: {{ page.date | date: '%Y' }}/{{ page.date | date: '%m' }}/{{ page.date | date: '%d' }}</span>
+      </p>
+      
+      <div class="postbody">
+        {{ content }}
+      </div>
+    </article>
 
-      <hr>
-      <p align="right"><a href="https://myildi.github.io/">Back to the complete table of contents</a></p>
+    <div class="recent-posts">
+      <h3>Last five articles</h3>
+      <ul>
+        {% for post in site.posts limit:5 %}
+          <li>
+            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <p class="back-link"><a href="https://myildi.github.io/">Back to the complete table of contents</a></p>
+  </div>
+</body>
