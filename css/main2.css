@@ -1,0 +1,84 @@
+/* Base styles */
+body {
+    color: #00008B;
+    background-color: white;
+    font-family: "Lucida Bright", Tahoma, Geneva, sans-serif;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: medium groove #8b000e;
+}
+
+/* Responsive typography */
+body, .postbody, .postexcerpt {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    body, .postbody, .postexcerpt {
+        font-size: 14px;
+    }
+}
+
+/* Links */
+a:link {
+    color: #620006;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Post styles */
+.posttitle {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 1.5em;
+    color: #9c8603;
+}
+
+.postbody {
+    line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+    color: #09629b;
+    font-family: "Tahoma", sans-serif;
+    font-weight: normal;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5em; }
+h4 { 
+    font-size: 1.25em;
+    font-weight: bold;
+    font-style: italic;
+}
+h5 { 
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        border-width: thin;
+    }
+
+    h1 { font-size: 1.75em; }
+    h2 { font-size: 1.5em; }
+    h3 { font-size: 1.25em; }
+    h4 { font-size: 1.1em; }
+    h5 { font-size: 1em; }
+}
+
+/* Uncomment if using with Jekyll theme
+@import 'jekyll-theme-dinky';
+*/
