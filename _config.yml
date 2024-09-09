@@ -1,0 +1,8 @@
+#name: "Murat Yildizoglu's Blog"
+description: "Bits of tricks, tips and thoughts by me. See my web site at https://yildizoglu.fr"
+
+url: "https://myildi.github.io"
+image_path: "https://myildi.github.io/images/"
+pygments: true
+
+theme: jekyll-theme-dinky
