@@ -4,23 +4,5 @@ description: "Bits of tricks, tips and thoughts by me. See my web site at https:
 url: "https://myildi.github.io"
 image_path: "https://myildi.github.io/images/"
 pygments: true
-<<<<<<< HEAD
 
-<<<<<<< HEAD
 theme: jekyll-theme-dinky
-
-#remote_theme: pages-themes/dinky@v0.2.0
-#plugins:
-#- jekyll-remote-theme # add this line to the plugins list if you already have one
-
-=======
-remote_theme: pages-themes/dinky@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
->>>>>>> 54cd565d4c51d19c7fc9e003919ac815627a6607
-=======
-theme: jekyll-theme-dinky
-#remote_theme: pages-themes/dinky@v0.2.0
-#plugins:
-#- jekyll-remote-theme # add this line to the plugins list if you already have one
->>>>>>> b36e2eff93a6b7a6a7378ed25af23d79e12e6ae0
