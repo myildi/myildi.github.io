@@ -11,7 +11,7 @@ body
 /* 	font-size: medium; */
 	line-height: normal;
 	text-align: justify;
-	width: 95%;
+	width: 96%;
 	clear: both;
 	position: relative;
 	right: auto;
@@ -28,6 +28,7 @@ a:hover { }
 .posttitle {font-family: Tahoma, Geneva, sans-serif;
 font-size: large;
 color: #9c8603;
+width: 95%;
 }
 
 .postbody
@@ -36,12 +37,14 @@ color: #9c8603;
 	color: #00008B;
 	font-size: 1.1em;
 	line-height: 1.5em;
+	width: 95%;
 }
 
 .postexcerpt {
 font-family: Tahoma, sans-serif;
 font-size: medium;
 color: #00008B;
+width: 95%;
 }
 
 h1 {color: #09629b;
@@ -121,6 +124,7 @@ font-style: italic;
 @media (max-width: 768px) {
   .footer-text {
     font-size: 0.8em;
+      width: 95%;
   }
 }
 
