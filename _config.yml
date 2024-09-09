@@ -5,4 +5,4 @@ url: "https://myildi.github.io"
 image_path: "https://myildi.github.io/images/"
 pygments: true
 
-theme: jekyll-theme-dinky
+# theme: jekyll-theme-dinky
