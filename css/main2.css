@@ -18,7 +18,8 @@ body
 	left: auto;
 }
 
-a:link {color: #620006;
+a:link {
+color: #620006;
 text-decoration: none;
  }
 
@@ -26,8 +27,9 @@ a:hover { }
 
 
 .posttitle {font-family: Tahoma, Geneva, sans-serif;
-font-size: 1.3em;
-color: #9c8603;
+font-size: 1.2em;
+color: purple ; 
+/* #9c8603; */
 width: 95%;
 }
 
