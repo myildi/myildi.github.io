@@ -1,2 +1,3 @@
 
-images/background-tree.afphoto
+images/*.afphoto
+images/*.webp
