@@ -14,11 +14,12 @@
 	<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body  style="background-image: url(&quot;{{ site.image_path }}index_bg.jpg&quot;);">
+  
   <div class="container">
     {% if page.page_image contains ".jpg" or page.page_image contains ".png" %}
       <p align="center"><img src="{{ site.image_path }}{{ page.page_image }}" alt="{{ page.title }}" class="img-fluid"></p>
     {% else %}
-      <h1 align="center">{{ page.title }}</h1>
+      <h1 align="center" class="posttitle">{{ page.title }}</h1>
     {% endif %} 
     <p style="text-align: center; font-size: 1.1em;">
       <a href="https://yildizoglu.fr" class="author-link">Murat Yildizoglu</a>
