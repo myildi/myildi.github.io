@@ -40,9 +40,8 @@ a:hover { }
 
 .posttitle {
 /*  font-family: Tahoma, Geneva, sans-serif; */
-# composes: oleo-script-bold;
  font-family: "Oleo Script", Tahoma, Geneva, sans-serif,  system-ui;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
 font-size: 1.2em;
 color: purple ; 
@@ -108,14 +107,6 @@ font-style: italic;
 	margin: 0 auto;
 	padding: 0 15px;
   }
-  
-
-.container {
-  width: 95%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 
 .img-fluid {
   max-width: 95%;
