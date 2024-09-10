@@ -39,8 +39,11 @@ a:hover { }
 
 
 .posttitle {
-# font-family: Tahoma, Geneva, sans-serif;
-composes: oleo-script-bold;
+/*  font-family: Tahoma, Geneva, sans-serif; */
+# composes: oleo-script-bold;
+ font-family: "Oleo Script", Tahoma, Geneva, sans-serif,  system-ui;
+  font-weight: 700;
+  font-style: normal;
 font-size: 1.2em;
 color: purple ; 
 /* #9c8603; */
