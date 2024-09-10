@@ -1,3 +1,15 @@
+.oleo-script-regular {
+  font-family: "Oleo Script", Tahoma, Geneva, sans-serif, system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.oleo-script-bold {
+  font-family: "Oleo Script", Tahoma, Geneva, sans-serif,  system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
 body
 {
 	color: #00008B;
@@ -26,7 +38,9 @@ text-decoration: none;
 a:hover { }
 
 
-.posttitle {font-family: Tahoma, Geneva, sans-serif;
+.posttitle {
+# font-family: Tahoma, Geneva, sans-serif;
+composes: oleo-script-bold;
 font-size: 1.2em;
 color: purple ; 
 /* #9c8603; */
@@ -49,25 +63,29 @@ color: #00008B;
 width: 95%;
 }
 
-h1 {color: #09629b;
+h1 {
+color: #09629b;
 font-family: "Tahoma", sans-serif;
 font-size: xx-large;
 font-weight: normal;
  }
 
-h2 {color: #09629b;
+h2 {
+color: #09629b;
 font-family: "Tahoma", sans-serif;
 font-size: x-large;
 font-weight: normal;
  }
 
-h3 {color: #09629b;
+h3 {
+color: #09629b;
 font-family: "Tahoma", sans-serif;
 font-size: large;
 font-weight: normal;
  }
 
-h4 {color: #09629b;
+h4 {
+color: #09629b;
 font-family: serif;
 font-size: medium;
 font-weight: bold;
@@ -88,15 +106,6 @@ font-style: italic;
 	padding: 0 15px;
   }
   
- 
-/* 
----
----
-
-@import 'jekyll-theme-dinky';
- */
-
-/* Add these to your existing CSS */
 
 .container {
   width: 95%;
