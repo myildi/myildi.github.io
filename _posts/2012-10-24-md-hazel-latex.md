@@ -10,23 +10,23 @@ As I have explained in my last posts, I am trying to craft a writing chain that 
 My chain works as the following (this completes my previous message):
 
 1. I write my text in IAWrite (under OSX or iOS) and they get saved in the iCloud (suppose that the file is called *mytext.md*).
-2. On the desktop, these files appear in the mobile documents folder (*~/Library/Mobile Documents/74ZAFF46HB~jp~informationarchitects~Writer/Documents*). I use a first Hazel script (see *Figure 1*), attached to this folder, for copying this file to a Dropbox folder, as soon as a new version is saved.  
-![Figure 1][fig1]  
+2. On the desktop, these files appear in the mobile documents folder (~/Library/Mobile Documents/74ZAFF46HB~jp~informationarchitects~Writer/Documents). I use a first Hazel script (see *Figure 1*), attached to this folder, for copying this file to a Dropbox folder, as soon as a new version is saved.  
+![Figure 1][../images/blog-md-hazel-1.png]  
 **Figure 1:** Copying the .md files to a Dropbox folder  
 3. When the .md file is copied, other Hazel scripts, attached to the destination Dropbox folder, start to play. 
 4. One script converts the file to .html and .opml formats. This script calls **[multimarkdown](http://fletcherpenney.net/multimarkdown/ "MultiMarkdown")** for converting the copied markdown file to these formats (see *Figures 2-3*).  
-![Figure 2][fig2]  
+![Figure 2][../images/blog-md-html-1.png]  
 **Figure 2:** Convert the md file to HTML and OPML  
-![Figure 3][fig3]  
+![Figure 3][../images/blog-md-html-2.png]  
 **Figure 3:** Convert the md file to HTML and OPML, the bash script  
 
 5. Another script (see Figures *4-5*) converts the file to Latex format (only if the md file contains the meta tags that are necessary for obtaining a complete Latex file at the end of the conversion -- otherwise Multimarkdown converts Latex snippets that cannot be compiled by Latex).  
-![Figure 4][fig4]  
+![Figure 4][../images/blog-md-latex-1.png]  
 **Figure 4:** Detecting the changed md file to be converted to Latex  
-![Figure 5][fig5]  
+![Figure 5][../images/blog-md-latex-2.png]  
 **Figure 5:** Converting the file to Latex
 6. A last script (see *Figure 6*) converts the Latex file obtained in the previous step to PDF, using **[latexmake](http://xpt.sourceforge.net/tools/latexmake/ "LatexMake - makefile for Latex compiling")**. Latexmake is a Perl script that automatically runs the necessary operations for converting your tex file to PDF (the final format I have chosen here). Moreover, I have discovered that multimarkdown is not able to correctly convert accented characters in the meta tag fields. So, I have problems if the title, for example, is in French. For correctly converting these Unitype characters, one needs to compile the document using **xelatex**, and not **pdflatex**. The full Bash script I use is given below (including some commented instructions that were useful for debugging it, and that could be useful in some other contexts).  
-![Figure 6][fig6]  
+![Figure 6][ ../images/blog-md-xelatex.png] 
 **Figure 6:** Converting the Latex file running latexmk and Xelatex
 
 **Bash script for compiling with [Xetex](http://en.wikipedia.org/wiki/XeTeX "XeTeX - Wikipedia, the free encyclopedia"):**
