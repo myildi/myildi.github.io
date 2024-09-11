@@ -57,17 +57,3 @@ My chain works as the following (this completes my previous message):
     #For other options run "man latexmake" in Terminal
     /usr/texbin/latexmk -f -g -verbose -xelatex -silent $filename.tex
     /usr/local/bin/growlnotify -a terminal -t "Finished Latexmk"
-
-
-
- [fig1]: https://dl.dropbox.com/s/vm7qe9q8nvwf901/blog-md-hazel-1.png?dl=1 "Figure 1"
-
- [fig2]: https://www.dropbox.com/s/y9udt63ogieq2xq/blog-md-html-1.png?dl=1 "Figure 2"
- 
- [fig3]: https://www.dropbox.com/s/37awzzfwufkzt32/blog-md-html-2.png?dl=1 "Figure 3"
- 
- [fig4]: https://www.dropbox.com/s/j6szq9xyjg5p0i7/blog-md-latex-1.png?dl=1 "Figure 4"
- 
- [fig5]: https://www.dropbox.com/s/m8bu3u0w62rv8ep/blog-md-latex-2.png?dl=1 "Figure 5"
- 
- [fig6]: https://www.dropbox.com/s/05vnjbysvtugsz3/blog-md-xelatex.png?dl=1 "Figure 6"
