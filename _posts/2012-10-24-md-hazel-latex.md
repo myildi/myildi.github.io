@@ -11,7 +11,7 @@ My chain works as the following (this completes my previous message):
 
 1. I write my text in IAWrite (under OSX or iOS), and it gets saved in iCloud (suppose that the file is called *mytext.md*).
 2. On the desktop, these files appear in the mobile documents folder (~/Library/Mobile Documents/74ZAFF46HB~jp~informationarchitects~Writer/Documents). I use a first Hazel script (see *Figure 1*) attached to this folder for copying this file to a Dropbox folder as soon as a new version is saved.  
-![Figure 1](../images/blog-md-hazel-1.png)  
+![Figure 1](https://myildi.github.io/images/blog-md-hazel-1.png)  
 **Figure 1:** Copying the .md files to a Dropbox folder  
 3. When the .md file is copied, other Hazel scripts attached to the destination Dropbox folder start to play. 
 4. One script converts the file to .html and .opml formats. This script calls **[multimarkdown](http://fletcherpenney.net/multimarkdown/ "MultiMarkdown")** for converting the copied markdown file to these formats (see *Figures 2-3*).  
