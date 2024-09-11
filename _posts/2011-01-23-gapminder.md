@@ -4,7 +4,7 @@ layout: post
 ---
 This time I will write on my first impression about a gorgeous teaching tool that I have discovered thanks to a [TED video by Hans Rosling](http://www.ted.com/talks/hans_rosling_shows_the_best_stats_you_ve_ever_seen.html): **[Gapminder](http://www.gapminder.org/)**.  
 
-!["Gapminder"](https://www.dropbox.com/s/6xnxyqv7y0cexvq/gapminder.jpg?dl=1)
+!["Gapminder"](/images/gapminder.png)
 
 Gapminder is a web site that allows dynamic presentation of many interesting time series (economic indicators, demographics, education, technology). It is also possible to download an off-line version made with Adobe Air.  
 
