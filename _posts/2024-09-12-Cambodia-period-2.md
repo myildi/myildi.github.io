@@ -10,9 +10,7 @@ This reconstruction process, which has been underway since the Paris Accords in 
 
 The country has benefited from considerable international aid since the 1990s. The total international aid received from 2013 to 2023 was one billion US Dollars, including 115.5 MUSD from the EU, 99.5 MUSD from the ADB, 75.5 MUSD from Japan, 52.6 MUSD from UNICEF, and just over 49 MUSD from USAID and the World bank (Source: Built by the author from the [ODA Cambodia Database](http://oda.cdc.gov.kh).
 
-
-{% center_image A classroom rather full /images/classroom-bonded.jpg center_image %}
-
+![A classroom rather full](/images/classroom-bonded.jpg)
 
 Unfortunately, there are relatively few visible effects of this aid, primarily intended to strengthen primary and secondary education, on the ground: poorly equipped schools with sanitary conditions whose inadequacies were glaring during the Covid epidemic; 58% of primary schools do not have access to safe drinking water. Cambodia still ranks 146th globally out of 191 countries in the Human Development Index, and less than 10% of 15-year-old students demonstrate minimal competencies in reading and mathematics in Pisa-D tests (2019).
 
