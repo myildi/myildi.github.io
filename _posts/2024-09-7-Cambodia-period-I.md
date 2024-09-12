@@ -7,13 +7,15 @@ tags: Cambodia MOEYS Education ETI
 I have spent the last four and a half years in Cambodia as an advisor to H.E. Hang Chuon Naron, the Cambodian minister of education, youth, and sports **(MOEYS)**. This extended mission commissioned by the French MEAE and managed by Expertise France has truly been a fascinating experience. 
 
 ![How DALEE imagines Cambodia](/images/SrokSrae.jpg)
-_(How DALEE imagines Cambodia_
+
+_(How DALEE imagines Cambodia)_
 
 I discovered a new country, culture, language, and education system in the process of (re)creation after the catastrophic Khmer Rouge **(KR)** period. 
 
 In four years (mainly between 1975 and 1975, even if the war continued until the end of the 80s), the Khmer Rouge systematically destroyed all signs of the development accomplished since the independence of the country. Teachers and education institutions (and « intellectuals », which could mean just having to wear eyeglasses) have been major targets of this destruction inflicted on one-fourth or one-fifth of the Cambodian population (causing the deaths of 1.5 to 2 million people), depending on the estimates.
 
 ![First Cambodian students in France](/images/First-khmer-students-in-France.jpg)
+
 **First Cambodian students sent to study in France at Louis-le-Grand, 1893**
 
 
