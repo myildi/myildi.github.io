@@ -1,13 +1,9 @@
-module Jekyll
-  class CenterImageTag < Liquid::Tag
-    def initialize(tag_name, text, tokens)
-      super
-      @text = text.strip
-    end
-
-    def render(context)
-      "<div style=\"text-align:center\">\n  ![#{@text}](#{@text})\n</div>"
-    end
+def render(context)
+  if @text =~ /(.+)\s+(.+)/
+    alt_text, image_url = $1, $2
+    "<div style=\"text-align:center\"><img src=\"#{image_url}\" alt=\"#{alt_text}\"></div>"
+  else
+    "<div style=\"text-align:center\"><img src=\"#{@text}\" alt=\"\"></div>"
   end
 end
 
