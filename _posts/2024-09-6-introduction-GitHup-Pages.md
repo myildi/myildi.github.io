@@ -5,9 +5,9 @@ pin: true
 ---
 I moved [my old blog](https://yildizoglu.blogspot.fr) from _Blogger_ to **[Scriptogr.am](http://scriptogr.am/)** some years ago. Now it’s revival time, but with Jekyll (hopefully, without Mr Hyde).
 
-Sometimes, after switching to Scriptogr.am, I started to hear about **[Jekyll](https://jekyllrb.com/)**, and the idea looked seductive to me, but I was unsure if setting it up would be easy enough. I had some time to play with it, and it installed without any problem on my Mac. It was also easy to convert older posts in Markdown to a Yaml format compatible with Jekyll. 
+Sometimes after switching to Scriptogr.am, I started to hear about **[Jekyll](https://jekyllrb.com/)**, and the idea looked seductive to me, but I was unsure if setting it up would be easy enough. I had some time to play with it, and it installed without any problem on my Mac. It was also easy to convert older posts in Markdown to a Yaml format compatible with Jekyll. 
 
-Now that GitHub Pages includes Jekyll as an action, my process is even more straightforward: I write my posts in Markdown, commit them to Git, and push them to GitHub. They are magically converted to HTML pages on [my GitHub pages](https://myildi.github.io).
+Now that [GitHub Pages](https://pages.github.com) includes Jekyll as an action, my process is even more straightforward: I write my posts in Markdown, commit them to Git, and push them to GitHub. They are magically converted to HTML pages on [my GitHub pages](https://myildi.github.io).
 
 So, the new process is simple:
 1. [GitHub](https://pages.github.com) indicates how you create a new repository dedicated to your blog and how to clone it.
