@@ -4,9 +4,10 @@ title: The Cambodian period as an advisor to the Ministry of Education, Youth, a
 tags: Cambodia MOEYS Education ETI
 ---
 
-![How DALEE imagines Cambodia](/images/SrokSrae.jpg)
-
 I have spent the last four and a half years in Cambodia as an advisor to H.E. Hang Chuon Naron, the Cambodian minister of education, youth, and sports **(MOEYS)**. This extended mission commissioned by the French MEAE and managed by Expertise France has truly been a fascinating experience. 
+
+![How DALEE imagines Cambodia](/images/SrokSrae.jpg)
+_(How DALEE imagines Cambodia_
 
 I discovered a new country, culture, language, and education system in the process of (re)creation after the catastrophic Khmer Rouge **(KR)** period. 
 
