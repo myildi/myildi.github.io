@@ -6,11 +6,11 @@ tags: Cambodia MOEYS Education ETI
 
 I have spent the last four and a half years in Cambodia as an advisor to H.E. Hang Chuon Naron, the Cambodian minister of education, youth, and sports **(MOEYS)**. This extended mission commissioned by the French MEAE and managed by Expertise France has truly been a fascinating experience. 
 
+I discovered a new country, culture, language, and education system in the process of (re)creation after the catastrophic Khmer Rouge **(KR)** period. 
+
 ![How DALEE imagines Cambodia](/images/SrokSrae.jpg)
 
 _(How DALEE imagines Cambodia)_
-
-I discovered a new country, culture, language, and education system in the process of (re)creation after the catastrophic Khmer Rouge **(KR)** period. 
 
 Due to the Khmer Rouge genocide (1975-1979) and twenty years of civil war (1970-1990), including the Vietnamese occupation (1979-1989), the Cambodian education system suffered significant losses and still has substantial vulnerabilities despite long-standing international support and national efforts to improve the quality of education.
 
