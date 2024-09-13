@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Education Challenges in Cambodia, Part 4: Efforts for Improving the Enrollment and the Quality of Education in Primary and Secondary Schools in Cambodia
+title: Education Challenges in Cambodia, Part 4 - Efforts for Improving the Enrollment and the Quality of Education in Primary and Secondary Schools in Cambodia
 tags: Cambodia MOEYS Education ETI
 ---
 
