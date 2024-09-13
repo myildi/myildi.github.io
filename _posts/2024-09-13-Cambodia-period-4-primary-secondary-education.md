@@ -4,7 +4,7 @@ title: Education Challenges in Cambodia, Part 4 - Efforts for Improving the Enro
 tags: Cambodia MOEYS Education ETI
 ---
 
-In response to the challenges we discussed in the [previous article]({% post_url 2024-09-13-Cambodia-period-3 %), the government's Pentagon Strategy prioritizes education reform and aims to implement educational reforms focusing on eight priorities, namely: 
+In response to the challenges we discussed in the [previous article]({% post_url 2024-09-13-Cambodia-period-3 %}), the government's Pentagon Strategy prioritizes education reform and aims to implement educational reforms focusing on eight priorities, namely: 
 1. School reform programs; 
 1. Teacher development; 
 1. Digital education; 
