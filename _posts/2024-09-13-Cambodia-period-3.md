@@ -20,6 +20,11 @@ In this context, considerable challenges concern the overall and institutional l
 
 These are strong constraints that weigh on the strategies of the MOEYS and on actors in the field.
 
+
+Answering these challenges is urgent because, in every corner of the system I have visited and in every institution I have interviewed, I have met many enthusiastic pupils, students, young researchers, and dedicated teachers who push the system to educate their students. 
+
+The ministry recognizes these efforts and supports them with different mechanisms currently in action or being developed with the support of several international organizations: the EU in the first place but also the JICA, the KOICA, the World Bank, and the ADB.
+
 |![](/images/filler.png) |![](/images/Cinemin-chemin-srok.jpeg)|
 
 
