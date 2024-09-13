@@ -20,6 +20,6 @@ In this context, considerable challenges concern the overall and institutional l
 
 These are strong constraints that weigh on the strategies of the MOEYS and on actors in the field.
 
-![](/images/filler.png) ![](/images/Cinemin-chemin-srok.jpeg)
+|![](/images/filler.png) |![](/images/Cinemin-chemin-srok.jpeg)|
 
 
