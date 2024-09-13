@@ -4,7 +4,7 @@ title: Education Challenges in Cambodia, Part 4 - Structuring Higher Education a
 tags: Cambodia MOEYS Education ETI
 ---
 
-In the previous articles, we have discussed the [global challenges in education]( [previous article]({% post_url 2024-09-13-Cambodia-period-3 %),) and the situation in the primary and secondary educations.
+In the previous articles, we have discussed the [global challenges in education]( [previous article]({% post_url 2024-09-13-Cambodia-period-3 %} and [the situation in the primary and secondary educations]({% post_url 2024-09-13-Cambodia-period-4-primary-secondary-education%}.
 
 The higher education and research (HER) system in Cambodia suffers from significant weaknesses:
 
