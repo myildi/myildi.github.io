@@ -4,12 +4,12 @@ title: Education Challenges in Cambodia, Part 5/5 - A temporary conclusion
 tags: Cambodia MOEYS Education ETI
 ---
 
-The Cambodian Ministry of Education, Youth, and Sport (MoEYS) is developing relevant strategies to address structural and financial challenges, but the scale of the education system resulting from a very young population requires much more significant efforts from public authorities.
+The Cambodian Ministry of Education, Youth, and Sport (MoEYS) is developing relevant strategies to address structural and financial challenges, but the scale of the education system necessary for a very young population requires much more significant efforts from public authorities.
 
 **Education has been rising in national priorities in recent years**, but public authorities do not yet seem ready to fully commit to a path compatible with the announced development goals. The inadequacies of the education system have significant consequences in terms of human resources:
 
-- 89% of jobs currently correspond to very low qualifications
-- 50% of companies report major difficulties in recruiting for medium-skilled positions, such as technician roles
+- 89% of jobs currently correspond to very low qualifications;
+- 50% of companies report significant difficulties in recruiting for medium-skilled positions, such as technician roles.
 
 **Significant resources are still needed** to generalize the implementation of reforms envisioned for primary and secondary levels. Despite two successive World Bank loans, the restructuring of higher education is not yet included in urgent priorities.
 

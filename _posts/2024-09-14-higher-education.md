@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Education Challenges in Cambodia, Part 4 - Structuring Higher Education and Research in Cambodia
+title: Education Challenges in Cambodia, Part 4/5 - Structuring Higher Education and Research in Cambodia
 tags: Cambodia MOEYS Education ETI
 ---
 
