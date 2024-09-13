@@ -12,6 +12,12 @@ _(How DALEE imagines Cambodia)_
 
 I discovered a new country, culture, language, and education system in the process of (re)creation after the catastrophic Khmer Rouge **(KR)** period. 
 
+Due to the Khmer Rouge genocide (1975-1979) and twenty years of civil war (1970-1990), including the Vietnamese occupation (1979-1989), the Cambodian education system suffered significant losses and still has substantial vulnerabilities despite long-standing international support and national efforts to improve the quality of education.
+
+Although the constitution protects the right to education, education is still viewed as a private good, making it difficult to mobilize the necessary public investment to align the education system with the country's development strategies and the needs of its very young population **(46% of the population being under 25 years old)**.
+
+The education system still lacks structure at many levels, suffers from insufficient recognition of teaching and research professions, and a strong dispersion between the public and private sectors. The European Union is the leading force in education aid, notably through direct support to the MEYS budget since 2003 to carry out reforms outlined in the Strategic Education Plan.
+
 In four years (mainly between 1975 and 1975, even if the war continued until the end of the 80s), the Khmer Rouge systematically destroyed all signs of the development accomplished since the independence of the country. Teachers and education institutions (and « intellectuals », which could mean just having to wear eyeglasses) have been major targets of this destruction inflicted on one-fourth or one-fifth of the Cambodian population (causing the deaths of 1.5 to 2 million people), depending on the estimates.
 
 ![First Cambodian students in France](/images/First-khmer-students-in-France.jpg)
