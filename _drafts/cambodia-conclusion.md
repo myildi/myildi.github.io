@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Education Challenges in Cambodia, Part 5: As a temporary conclusion..
+title: Education Challenges in Cambodia, Part 5/5 - A temporary conclusion
 tags: Cambodia MOEYS Education ETI
 ---
 
