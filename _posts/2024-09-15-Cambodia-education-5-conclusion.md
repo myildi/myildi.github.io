@@ -32,4 +32,5 @@ Human resources capacities at the MoEYS also require substantial and persistent 
 6. **Capacity Building**: The MoEYS itself needs investment in human resources to manage these challenges effectively
 
 These factors highlight the complex challenges facing Cambodia's education system and the need for continued, comprehensive efforts to improve educational outcomes and align them with the country's development goals.
+
 |![](/images/filler.png) |![](/images/buildings.jpeg)|
