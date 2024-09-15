@@ -7,6 +7,7 @@ tags: Cambodia MOEYS Education ETI
 In the previous articles, we have discussed the [global challenges in education]( {% post_url 2024-09-13-Cambodia-period-3 %}) and [the situation in the primary and secondary educations]({% post_url 2024-09-13-Cambodia-period-4-primary-secondary-education%}). This article will discuss the challenges for higher education and research.
 
 |![](/images/filler.png) |![](/images/UNBB.jpeg)|
+| |© Murat Yildizoglu |
 
 The higher education and research **(HER)** system in Cambodia suffers from some significant fragilities:
 

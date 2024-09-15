@@ -26,5 +26,6 @@ Answering these challenges is urgent because, in every corner of the system I ha
 The ministry recognizes these efforts and supports them with different mechanisms currently in action or being developed with the support of several international organizations: the EU in the first place but also the JICA, the KOICA, the World Bank, and the ADB.
 
 |![](/images/filler.png) |![](/images/Cinemin-chemin-srok.jpeg)|
+| |© Murat Yildizoglu |
 
 
