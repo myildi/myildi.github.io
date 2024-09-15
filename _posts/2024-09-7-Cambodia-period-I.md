@@ -20,7 +20,8 @@ The education system still lacks structure at many levels, suffers from insuffic
 
 In four years (mainly between 1975 and 1975, even if the war continued until the end of the 80s), the Khmer Rouge systematically destroyed all signs of the development accomplished since the independence of the country. Teachers and education institutions (and « intellectuals », which could mean just having to wear eyeglasses) have been major targets of this destruction inflicted on one-fourth or one-fifth of the Cambodian population (causing the deaths of 1.5 to 2 million people), depending on the estimates.
 
-![First Cambodian students in France](/images/First-khmer-students-in-France.jpg)
+|![](/images/filler.png) |![First Cambodian students in France](/images/First-khmer-students-in-France.jpg)|
+
 
 **First Cambodian students sent to study in France at Louis-le-Grand, 1893**
 
