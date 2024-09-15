@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Cambodian period as an advisor to the Ministry of Education, Youth, and Sports. Part 3 - Global Challenges in Cambodian Education
+title: The Cambodian period as an advisor to the Ministry of Education, Youth, and Sports. Part 3/6 - Global Challenges in Cambodian Education
 tags: Cambodia MOEYS Education ETI
 ---
 

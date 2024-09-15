@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Cambodian period as an advisor to the Ministry of Education, Youth, and Sports. Part 2 - The education conundrum
+title: The Cambodian period as an advisor to the Ministry of Education, Youth, and Sports. Part 2/6 - The education conundrum
 tags: Cambodia MOEYS Education ETI
 ---
 
