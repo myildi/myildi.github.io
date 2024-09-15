@@ -32,7 +32,7 @@ Human resources capacities at the MoEYS also require substantial and persistent 
 
 6. **Capacity Building**: The MoEYS itself needs investment in human resources to manage these challenges effectively
 
-The complex challenges facing Cambodia's education system are considerable, and there is an essential need for continued, comprehensive efforts to improve educational outcomes and align them with the country's development goals. But if these needs are met, the young population of Cambodia will become a major asset in transforming the Cambodian economy and society.
+The complex challenges facing Cambodia's education system are considerable, and there is an essential need for continued, comprehensive efforts to improve educational outcomes and align them with the country's development goals. But if these needs are met, the young population of Cambodia will become a major asset in transforming the Cambodian economy and society. As such, education is definitely a **public good** and should be one of Cambodia’s main engines of growth.
 
 |![](/images/filler.png) |![](/images/buildings.jpeg)|
 | |© Murat Yildizoglu |
