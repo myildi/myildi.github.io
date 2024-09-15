@@ -17,7 +17,8 @@ Unfortunately, there are relatively few visible effects of this aid, primarily i
 
 Nevertheless, a positive shift has been observed recently, as the country aims to reach upper-middle-income levels. The last budget approved by the Council of Ministers plans to allocate 10% of public expenditure to the Ministry of Education, Youth and Sports (MOEYS). This would correspond to a budget of 990 MUSD, corresponding to a 9% increase compared to the previous year.
 
-|![](/images/filler.png) |![MOEYS boat during the OM Tuk 2023](/images/boat-MOEYS.jpg)|
+|![](/images/filler.png) |![MOEYS boat during the OM Tuk 2023](/images/boat-MOEYS-1.jpg)|
+| |© Murat Yildizoglu |
 
 
 
