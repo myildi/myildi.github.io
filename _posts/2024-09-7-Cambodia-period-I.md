@@ -23,9 +23,6 @@ In four years (mainly between 1975 and 1975, even if the war continued until the
 |![](/images/filler.png) |![First Cambodian students in France](/images/First-khmer-students-in-France.jpg)|
 | |**First Cambodian students sent to study in France at Louis-le-Grand, 1893**|
 
-
-**First Cambodian students sent to study in France at Louis-le-Grand, 1893**
-
 Given that Cambodia has not benefited, during the French Indochina period, from an investment in education as substantial as in Vietnam, the swift development after independence under the Sangkum regime of King Norodom Sihanouk was nothing less than remarkable, with the development of many schools and the first universities. Unfortunately, not much of this development has survived the KR period, which destroyed near totality of the accumulated intellectual and scientific capacity.
 
 After the KR period, followed by a Vietnamese occupation and rule over ten subsequent years, Cambodia was doubly penalized as an involuntary Vietnamese ally (the Vietnamese army being the only force willing to support the fight against the KR, since China and USA were supporting them) and as a country occupied by an ancestral enemy in an ultimate episode between the « Funnan » and the « Yunnan ».
