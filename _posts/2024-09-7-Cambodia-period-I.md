@@ -31,5 +31,7 @@ Consequently, after the end of the Vietnamese occupation, Cambodia was in a very
 
 32 years after the Paris Peace Agreements, signed on October 23, 1991, between the warring factions, including the KR, and after one of the costliest United Nations support programs (UNCTAD), the Cambodian education system continues to be one of the weakest in the ASEAN and suffers from many fragilities.
 
+|![](/images/filler.png) |![](/images/Cinemin-long-tail-PP.jpg)|
+
 
 
