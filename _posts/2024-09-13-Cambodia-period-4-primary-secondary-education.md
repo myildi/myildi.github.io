@@ -2,6 +2,7 @@
 layout: post
 title: Education Challenges in Cambodia, Part 4/6 - Efforts for Improving the Enrollment and the Quality of Education in Primary and Secondary Schools in Cambodia
 tags: Cambodia MOEYS Education ETI
+regenerate: false
 ---
 
 In response to the challenges we discussed in the [previous article]({% post_url 2024-09-13-Cambodia-period-3 %}), the government's Pentagon Strategy prioritizes education reform and aims to implement educational reforms focusing on eight priorities, namely: 
