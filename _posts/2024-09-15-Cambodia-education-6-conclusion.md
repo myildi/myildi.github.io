@@ -9,8 +9,6 @@ The Cambodian Ministry of Education, Youth, and Sport (MoEYS) is developing rele
 |![](/images/filler.png) |![](/images/window-rain.jpeg)|
 | |© Murat Yildizoglu |
 
-![](/images/window-rain.jpeg)
-
 **Education has been rising in national priorities in recent years**, but public authorities do not yet seem ready to fully commit to a path compatible with the announced development goals. The inadequacies of the education system have significant consequences in terms of human resources:
 
 - 89% of jobs currently correspond to very low qualifications;
