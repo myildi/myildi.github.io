@@ -33,7 +33,7 @@ Throughout my mission as an advisor to the Cambodian Minister of Education, Yout
 
 I asked ChatGPT to create a word cloud using these notes’ titles but eliminating ordinary English and French words.
 
-|![](/images/filler.png) |![A word cloud of my notes and reports](/images/Word-cloud-reports.jpg)|
+|![](/images/filler.png) |![A word cloud of my notes and reports](/images/Word-cloud-reports.png)|
 | |© Murat Yildizoglu |
 
 
