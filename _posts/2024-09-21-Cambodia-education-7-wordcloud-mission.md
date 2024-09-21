@@ -13,12 +13,12 @@ The following word cloud represents the relative frequency of different issues, 
 
 This journal contains tags for each action, and some of these tags also appear in this word cloud:
 
-- [BGF]: Grants of the French gouvenment
-- [EF]:  Expertise France / AFD 
-- [ENS]: Teaching
-- [ESR]: Higher education and research
-- [ESWG]: Education Sector Working Group
-- [FF]:  French language and Francophonie 
-- [FSPI]: The FSPI project  "Le français au Cambodge"
-- [Note]: Notes or reports
+- **BGF -** Grants of the French gouvenment
+- **EF -**  Expertise France / AFD 
+- **ENS -** Teaching
+- **ESR -** Higher education and research
+- **ESWG -** Education Sector Working Group
+- **FF -**  French language and Francophonie 
+- **FSPI -** The FSPI project  "Le français au Cambodge"
+- **Note -** Notes or reports
 
