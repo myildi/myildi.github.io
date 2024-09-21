@@ -13,7 +13,7 @@ The following word cloud represents the relative frequency of different issues, 
 
 This journal contains tags for each action, and some of these tags also appear in this word cloud:
 
-- **BGF -** Grants of the French gouvenment
+- **BGF -** Grants of the French government
 - **EF -**  Expertise France / AFD 
 - **ENS -** Teaching
 - **ESR -** Higher education and research
