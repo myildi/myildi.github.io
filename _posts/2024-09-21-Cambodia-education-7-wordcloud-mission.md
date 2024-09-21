@@ -20,5 +20,5 @@ This journal contains tags for each action, and some of these tags also appear i
 - [ESWG] : Education Sector Working Group
 - [FF] : French language and Francophonie 
 - [FSPI] : The FSPI project  "Le français au Cambodge"
-- [Note] : Notes ou reports
+- [Note] : Notes or reports
 
