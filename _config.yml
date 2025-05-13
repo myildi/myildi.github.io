@@ -4,6 +4,7 @@ description: "Bits of tricks, tips and thoughts by me. See my web site at https:
 url: "https://myildi.github.io"
 image_path: "https://myildi.github.io/images/"
 highlighter: true
+incremental: true
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
