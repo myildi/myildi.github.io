@@ -80,6 +80,26 @@ body > *:not(script) {
 }
 
 /* Post Title - Fixed for Safari without gradient text */
+.posttitle-main {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  /* Solid color for cross-browser compatibility */
+  color: var(--cream);
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.4),
+    0 0 30px rgba(212, 175, 55, 0.1);
+  margin-bottom: 0.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 3px solid var(--bordeaux);
+  width: 100%;
+  /* Ensure sharp text rendering */
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: geometricPrecision;
+}
+
+
+/* Post Title - Fixed for Safari without gradient text */
 .posttitle {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 700;
