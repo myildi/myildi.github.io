@@ -83,7 +83,7 @@ body > *:not(script) {
 .posttitle {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 700;
-  font-size: 2.5em;
+  font-size: 2em;
   /* Solid color for cross-browser compatibility */
   color: var(--cream);
   text-shadow: 
