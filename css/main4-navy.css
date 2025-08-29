@@ -244,7 +244,7 @@ h5 {
 p {
   margin: 1em 0;
   /* Optimal width for readability [[5]] */
-  max-width: 65ch;
+  max-width: 1200px;
 }
 
 /* Container */
