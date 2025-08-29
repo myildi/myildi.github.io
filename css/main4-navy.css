@@ -62,6 +62,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  max-width: 1200px;
 }
 
 /* Content Wrapper */
@@ -79,7 +80,7 @@ body > *:not(script) {
   transform: translateZ(0);
 }
 
-/* Post Title - Fixed for Safari without gradient text */
+/* Page Title - Fixed for Safari without gradient text */
 .posttitle-main {
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 700;
@@ -112,7 +113,8 @@ body > *:not(script) {
   margin-bottom: 0.5em;
   padding-bottom: 0.5em;
   border-bottom: 3px solid var(--bordeaux);
-  width: 100%;
+  /* width: 100%; */
+  max-width: 100%; 
   /* Ensure sharp text rendering */
   -webkit-font-smoothing: subpixel-antialiased;
   text-rendering: geometricPrecision;
