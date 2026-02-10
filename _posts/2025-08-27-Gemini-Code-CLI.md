@@ -71,7 +71,7 @@ I was able to paste this code into the code panel of NetLogo, and finally, I cou
 The next step is to build the graphical interface, run this program, and compare its results with those obtained using the model in Java.
 
 |![](/images/filler.png) |![Statistics from the last session of collaboration with Gemini](/images/gemini-cli-stats.jpg)|
-| |**tatistics from the last session of collaboration with Gemini CLI**|
+| |**Statistics from the last session of collaboration with Gemini CLI**|
 
 ## To conclude
 
