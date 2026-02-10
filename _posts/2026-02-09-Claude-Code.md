@@ -27,6 +27,7 @@ Voici mon analyse complète de votre site RapidWeaver et les options de migratio
 - Contenu académique : PDF (20), modèles NetLogo (15), vidéos, archives Java
 
 ### Dépendances RapidWeaver propriétaires
+
 | Élément | Détail |
 |---------|--------|
 | Thème MultiXLabel | CSS/JS/images dans `/rw_common/themes/multixlabel/` |
