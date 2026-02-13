@@ -4,7 +4,9 @@ title: Experimenting with Claude Code
 tags: LLMs Claude-Code Programming
 ---
 
-After having played with Gemini Code, I wanted to test the sheriff in town: **Claude Code**, and I am very impressed, like everybody.
+After playing with Gemini Code, I wanted to test the sheriff in town: **[Claude Code](https://claude.com/product/claude-code)**, and I am very impressed, like everyone else.
+
+If you don't know it, Claude Code is a Pro feature of Claude that lets you create and modify programming projects directly on your computer, without copying and pasting between an IDE and Claude. It can hence create and modify files on your computer, depending on the rights you give it (you can limit it to files in a given folder, for example). 
 
 My test was somewhat unorthodox and on the fringe of Claude Code's targets. 
 
@@ -27,7 +29,7 @@ Voici mon analyse complète de votre site RapidWeaver et les options de migratio
 - Contenu académique : PDF (20), modèles NetLogo (15), vidéos, archives Java
 
 ### Dépendances RapidWeaver propriétaires
-
+ 
 | Élément | Détail |
 |---------|--------|
 | Thème MultiXLabel | CSS/JS/images dans `/rw_common/themes/multixlabel/` |
