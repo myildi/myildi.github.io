@@ -18,4 +18,4 @@ I recently wanted to codify a series of transformations as a **skill** that I pl
 
 I am yet to discover all the new avenues Claude Code opens for my tasks (it excels in all administrative time-consuming tasks), and I continue to be cautious (maybe too much, but can we be too cautious with such tools?) about what I can let it access on my computer, but Claude Code has already changed many of my routines on this kind of tasks.
 
-Combining my preferred LLM with local agentification (that I already tested with [Gemini Code](/2025/08/27/Gemini-Code-CLI.html) makes a perfect tool.
+Combining my preferred LLM with local agentification (that I already tested with [Gemini Code](/2025/08/27/Gemini-Code-CLI.html)) makes a perfect tool.
