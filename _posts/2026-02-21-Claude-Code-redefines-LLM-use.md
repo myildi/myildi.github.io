@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Claude-Code Redefined LLM use
+title: Claude-Code Redefines LLM use
 tags: LLMs Claude-Code LLMs 
 ---
 
